@@ -1,0 +1,117 @@
+/*Reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+/* norm0.com Style*/
+body{
+ background: #eae7e1;
+ background-attachment: fixed;
+ font: 14px/1.5em Arial, sans-serif;
+}
+.container{
+ width:90%x;
+ margin:0 5%;
+ color:#555424;
+ overflow:hidden;
+}
+h1{
+  font-size:2.5em;
+  line-height:3.5em;
+  width:200px;
+  height:125px;
+}
+
+h2{
+  padding: 0 0 15px;
+  font-size:2em;
+  color: #0C0912;
+}
+h3{
+  font-weight:bold;
+}
+p {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+a { color:#9a9a9a;}
+
+header.intro{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-color: #EEF4F7;
+  z-index: -9999;
+}
+
+header p{
+margin-bottom:1em;
+font-size: 158.33333333%;
+line-height: 1;
+}
+
+footer{
+opacity: 0.5;
+}
+.clear {
+display:block;
+}
+
+.clear:after,.container:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+* html .clear {
+height:1%;
+}
