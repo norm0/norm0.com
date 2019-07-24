@@ -63,8 +63,7 @@ body{
 h1{
   font-size:2.5em;
   line-height:3.5em;
-  width:200px;
-  height:125px;
+  font-family: 'Inconsolata', monospace;
 }
 
 h2{
