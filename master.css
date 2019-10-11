@@ -183,3 +183,19 @@ footer {
 * html .clear {
   height: 1%;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444444;
+    color: #E4E4E4;
+  }
+  .header.intro {
+    background-color: #F2F2F2;
+  }
+  a {
+    color: #A9A9A9;
+  }
+  img {
+    filter: grayscale(30%);
+  }
+}
