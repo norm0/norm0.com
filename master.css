@@ -124,6 +124,7 @@ body {
   width: 90%;
   margin: 0 5%;
   color: #555424;
+  background-color: inherit;
   overflow: hidden;
 }
 h1 {
