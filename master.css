@@ -145,7 +145,7 @@ p {
   font-style: italic;
 }
 a {
-  color: #9A9A9A;
+  color: #6A6A6A;
 }
 
 header.intro {
@@ -192,9 +192,7 @@ footer {
   .header.intro {
     background-color: #F2F2F2;
   }
-  a {
-    color: #A9A9A9;
-  }
+
   img {
     filter: grayscale(30%);
   }
