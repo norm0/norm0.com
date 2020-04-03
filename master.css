@@ -190,8 +190,10 @@ footer {
     background-color: #444444;
     color: #E4E4E4;
   }
-  .header.intro {
-    background-color: #F2F2F2;
+  .container,
+  header.intro {
+    background-color: #333333;
+    color: #F2F2F2;
   }
 
   img {
