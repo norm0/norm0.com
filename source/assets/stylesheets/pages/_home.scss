@@ -1,0 +1,13 @@
+//------------------------------------
+// # Home-Page
+//------------------------------------
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  height: 100vh;
+  grid-gap: 2rem;
+
+}

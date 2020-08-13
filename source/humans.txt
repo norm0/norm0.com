@@ -1,0 +1,21 @@
+/* TEAM */
+
+
+/* THANKS */
+
+    Ruby
+    Middleman
+    HTML5 Bolireplate
+    HAML
+    Sass
+    Susy
+    Compass
+    jQuery
+    GIT
+
+/* SITE */
+
+    Last Update: 2020/08/12
+    Doctype: HTML5
+    IDE: VSCode
+    Platform: Middleman - Ruby
