@@ -2,12 +2,100 @@
 // # Home-Page
 //------------------------------------
 
-.container{
+section {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 1fr;
-  align-items: center;
-  height: 100vh;
-  grid-gap: 2rem;
 
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 4%;
+  h2 {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $red-FF2A00;
+    text-align: left;
+    line-height: 2.25rem;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $black-34302E;
+    text-align: left;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: $black-34302E;
+    text-align: left;
+    line-height: 1.75rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
+
+#intro {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0 2rem;
+  padding: 0% 4%;
+  min-height: auto;
+  h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $black-34302E;
+    text-align: left;
+    line-height: 3rem;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 3.875rem;
+    color: $black-1F1E1E;
+    text-align: left;
+    line-height: 4.5rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $black-34302E;
+    text-align: left;
+    margin-bottom: 4rem;
+    a{
+      color: $black-34302E;
+      border-bottom: 1px dotted $blue-0B5482;
+      &:hover{
+        color: $blue-0B5482;
+        text-decoration: none;
+      }
+    }
+  }
+  img{
+    vertical-align: top;
+  }
+}
+
+// Work
+#work {
+  background-color: $tan-F3E9DB;
+}
+
+// Clients
+#clients {
+  background-color: $tan-F3E9DB;
+}
+
+// Capabilities
+#capabilities {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  .block ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+// About

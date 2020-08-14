@@ -1,7 +1,9 @@
 //------------------------------------
 // # Application
 //------------------------------------
-  
+//## Boostrap
+@import "~bootstrap/scss/bootstrap";
+
 //## Helpers
 @import "helpers/functions";
 @import "helpers/mixins";
@@ -14,7 +16,7 @@
 @import "base/utilities";
 
 //## Layouts
-@import "layout/header";
+@import "layout/nav";
 @import "layout/sidebar";
 @import "layout/footer";
 

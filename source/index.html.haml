@@ -1,54 +1,62 @@
-%section.container#intro
-  %h1 Norm Orstad here! 
-  %h2 I speak digital.
-  %p Product designer looking for my next full-time role. I’ve designed & built products and websites for over 15 years. See my work and capabilities. 
+%section#intro
+  %div
+    %h1 Norm Orstad here! 
+    %h2 I speak digital.
+    %p 
+      Product designer looking for my next full-time role. I’ve designed & built products and websites for over 15 years. See my 
+      = link_to "work", "#work" 
+      and 
+      = link_to "capabilities", "#capabilities"
+      \.  
 
-  = link_to "About me →", "#about" 
+    = link_to "About me →", "#about", class: "btn btn-primary"
+  %div
+    = image_tag("assets/images/me-2019-700.png")
 
-
-%section.container#work
+%section#work
   %h2 Work
   %ul
     %li 
       %h3 Tree Builder
       %p Workflow and automation builder for enterprise
-      = link_to "View Project →", "#" 
+      = link_to "View Project →", "#", class: "btn btn-primary"
     %li 
       %h3 KEG
       %p Not the barrel but a conference for enthusiasts.
-      = link_to "View Project →", "#" 
+      = link_to "View Project →", "#", class: "btn btn-primary" 
     %li 
       %h3 Service Catalogs
       %p Requests and services in an enterprise storefront.
-      = link_to "View Project →", "#" 
+      = link_to "View Project →", "#", class: "btn btn-primary" 
     %li 
       %h3 MixMobi
       %p Mobile promotions and real-time reporting
-      = link_to "View Project →", "#" 
+      = link_to "View Project →", "#", class: "btn btn-primary" 
 
-%section.container#capabilities
-  %h2 Capabilities
-  %h3 Design
-  %ul
-    %li Product Design
-    %li UI/UX Design
-    %li Wireframing
-    %li User research
-    %li Prototyping
-    %li Logos & Branding
-    %li Social Media, email, ads
-    %li Promotion & print
+%section#capabilities
+  .block
+    %h2 Capabilities
+    %h3 Design
+    %ul
+      %li Product Design
+      %li UI/UX Design
+      %li Wireframing
+      %li User research
+      %li Prototyping
+      %li Logos & Branding
+      %li Social Media, email, ads
+      %li Promotion & print
+  .block
+    %h3 Development
+    %ul
+      %li HTML/CSS
+      %li Ruby on Rails
+      %li Middleman
+      %li Gatsby.js
+      %li ReactJS
+      %li JavaScript
 
-  %h3 Development
-  %ul
-    %li HTML/CSS
-    %li Ruby on Rails
-    %li Middleman
-    %li Gatsby.js
-    %li ReactJS
-    %li JavaScript
-
-%section.container#clients
+%section#clients
   %h2 Client List
   %ul
     %li HP
@@ -56,7 +64,7 @@
     %li American Heart Association
     %li Catholic Healthcare West
 
-%section.container#about
+%section#about
   %h2 About me
   %p I am a digital product designer, living near Minneapolis, Minnesota. I’ve spent the last 15 years at agencies, startups and software companies. 
 

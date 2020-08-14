@@ -1,3 +1,23 @@
 //------------------------------------
 // # Footer
 //------------------------------------
+footer {
+  background-color: $black-1F1E1E;
+  color: $white-FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: top;
+  min-height: 10vh;
+  grid-gap: 1rem;
+  padding: 1% 4%;
+  .connections{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: top;
+    ul{
+      list-style: none;
+    }
+  }
+}
