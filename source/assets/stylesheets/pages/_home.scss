@@ -40,7 +40,7 @@ section {
 #intro {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 0 2rem;
+  grid-gap: 0 6rem;
   padding: 0% 4%;
   min-height: auto;
   h1 {
@@ -108,7 +108,7 @@ section {
     p {
       color: $black-34302E;
     }
-    img {
+    img.work-thumbnail {
       border-top-left-radius: 0.625rem;
       border-bottom-right-radius: 0.625rem;
       margin-top: 4rem;
