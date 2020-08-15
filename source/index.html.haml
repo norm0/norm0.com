@@ -15,59 +15,88 @@
 
 %section#work
   %h2 Work
-  %ul
-    %li 
-      %h3 Tree Builder
-      %p Workflow and automation builder for enterprise
-      = link_to "View Project →", "#", class: "btn btn-primary"
-    %li 
-      %h3 KEG
-      %p Not the barrel but a conference for enthusiasts.
-      = link_to "View Project →", "#", class: "btn btn-primary" 
-    %li 
-      %h3 Service Catalogs
-      %p Requests and services in an enterprise storefront.
-      = link_to "View Project →", "#", class: "btn btn-primary" 
-    %li 
-      %h3 MixMobi
-      %p Mobile promotions and real-time reporting
-      = link_to "View Project →", "#", class: "btn btn-primary" 
+  .cards
+    .card.card-work.card-work--tree
+      .card-body
+        %h3 Tree Builder
+        %p Workflow and automation builder for enterprise
+        = link_to "View Project →", "#", class: "btn btn-primary btn-md"
+      = image_tag "screenshot-tree.png", class: "", alt: ""
+    .card.card-work.card-work--keg 
+      .card-body
+        %h3 KEG
+        %p Not the barrel but a conference for enthusiasts.
+        = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
+      = image_tag "screenshot-keg.png", class: "", alt: ""
+    .card.card-work.card-work--catalogs 
+      .card-body
+        %h3 Service Catalogs
+        %p Requests and services in an enterprise storefront.
+        = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
+      = image_tag "screenshot-catalog.png", class: "", alt: ""
+    .card.card-work.card-work--mixmobi
+      .card-body
+        %h3 MixMobi
+        %p Mobile promotions and real-time reporting
+        = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
+      = image_tag "screenshot-mixmobi.png", class: "", alt: ""
 
 %section#capabilities
-  .block
-    %h2 Capabilities
-    %h3 Design
-    %ul
-      %li Product Design
-      %li UI/UX Design
-      %li Wireframing
-      %li User research
-      %li Prototyping
-      %li Logos & Branding
-      %li Social Media, email, ads
-      %li Promotion & print
-  .block
-    %h3 Development
-    %ul
-      %li HTML/CSS
-      %li Ruby on Rails
-      %li Middleman
-      %li Gatsby.js
-      %li ReactJS
-      %li JavaScript
+  %h2 Capabilities
+  .block-wrapper
+    .block
+      %h3 Design
+      %ul
+        %li Product Design
+        %li UI/UX Design
+        %li Wireframing
+        %li User research
+        %li Prototyping
+        %li Logos & Branding
+        %li Social Media, email, ads
+        %li Promotion & print
+    .block
+      %h3 Development
+      %ul
+        %li HTML/CSS
+        %li Ruby on Rails
+        %li Middleman
+        %li Gatsby.js
+        %li ReactJS
+        %li JavaScript
 
 %section#clients
   %h2 Client List
-  %ul
-    %li HP
-    %li Belkin
-    %li American Heart Association
-    %li Catholic Healthcare West
+  .card-deck
+    .card.card-clients.card-clients--hp 
+      = inline_svg "hp_logo_2012.svg" 
+    .card.card-clients.card-clients--belkin 
+      = inline_svg "belkin-logo.svg" 
+    .card.card-clients.card-clients--aha 
+      = inline_svg "aha-logo-k.svg" 
+    .card.card-clients.card-clients--dignity 
+      = inline_svg "dignity_health_logo.svg" 
+  %p.text-center.mt-3  (2010-2014)
 
 %section#about
-  %h2 About me
+  %h2 About
   %p I am a digital product designer, living near Minneapolis, Minnesota. I’ve spent the last 15 years at agencies, startups and software companies. 
 
   %p Building a website from cradle to grave has been my sweet spot as a designer and developer. 
 
-  %p You can check out some of my past projects on Dribbble. Connect socially on Twitter. Read my full resume on LinkedIn. Or if you like, you can send me an email. Geek out on github.
+  %p 
+    You can check out some of my past projects on 
+    = link_to "dribbble", "//dribbble.com/norm0", target: "_blank"
+    \. 
+    Connect socially on 
+    = link_to "twitter", "//twitter.com/norm0", target: "_blank"
+    \. 
+    Read my full resume on 
+    = link_to "linkedIn", "//linkedin.com/in/norm0/", target: "_blank"
+    \. 
+    Or if you like, you can send me an 
+    = link_to "email", "mailto:norman@orstad.com"
+    \. 
+    Geek out on 
+    = link_to "github", "//github.com/norm0", target: "_blank"
+    \. 

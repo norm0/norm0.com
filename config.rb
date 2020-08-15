@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+activate :inline_svg
+
 # Per-page layout changes:
 #
 # With no layout
@@ -36,7 +38,7 @@ end
 configure :development do
 
   # Reload the browser automatically whenever files change
-  activate :livereload, :no_swf => true
+  activate :livereload, no_swf: true
 
   # Assets Pipeline Sets
   set :css_dir, 'assets/stylesheets'
@@ -54,8 +56,7 @@ configure :development do
   latency: 1
 
   config[:js_dir] = 'assets/javascripts'
-  config[:css_dir] = 'assets/stylesheets'  
-
+  config[:css_dir] = 'assets/stylesheets'
 end
 
 # Build Environment

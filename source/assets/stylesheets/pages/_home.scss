@@ -63,16 +63,16 @@ section {
     color: $black-34302E;
     text-align: left;
     margin-bottom: 4rem;
-    a{
+    a {
       color: $black-34302E;
       border-bottom: 1px dotted $blue-0B5482;
-      &:hover{
+      &:hover {
         color: $blue-0B5482;
         text-decoration: none;
       }
     }
   }
-  img{
+  img {
     vertical-align: top;
   }
 }
@@ -80,18 +80,94 @@ section {
 // Work
 #work {
   background-color: $tan-F3E9DB;
+  min-height: auto;
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .card-work {
+    background-color: $white-FFFFFF;
+    border-radius: 0.625rem;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    .card-body {
+      padding: 5rem;
+    }
+    h3 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: $black-1F1E1E;
+      text-align: left;
+    }
+    p {
+      color: $black-34302E;
+    }
+    img {
+      border-top-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+      margin-top: 4rem;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.32);
+    }
+    &--tree {
+      background-color: #f5a623;
+    }
+    &--keg {
+      background-color: $black-1F1E1E;
+      .card-body > h3,
+      p {
+        color: $white-FFFFFF;
+      }
+    }
+    &--catalogs {
+      background-color: $gray-FBFBFB;
+    }
+  }
 }
 
 // Clients
 #clients {
   background-color: $tan-F3E9DB;
+  min-height: 20vh;
+  .card-clients {
+    background-color: $white-FFFFFF;
+    border-radius: 0.75rem;
+    border-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 132px;
+    &--hp {
+      background-color: #0096d6;
+    }
+    &--belkin {
+      background-color: #73d44a;
+    }
+    &--aha {
+      background-color: #d9332c;
+    }
+    &--dignity {
+      background-color: #f26724;
+    }
+  }
 }
 
 // Capabilities
 #capabilities {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  .block ul{
+  min-height: 20vh;
+  align-items: top;
+  .block-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .block ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -99,3 +175,15 @@ section {
 }
 
 // About
+#about {
+  display: block;
+  min-height: 10vh;
+  a {
+    color: $black-34302E;
+    border-bottom: 1px dotted $blue-0B5482;
+    &:hover {
+      color: $blue-0B5482;
+      text-decoration: none;
+    }
+  }
+}

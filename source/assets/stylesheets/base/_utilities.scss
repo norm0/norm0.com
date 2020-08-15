@@ -12,4 +12,9 @@
     color:  $red-FF2A00;
     text-align: center;
     line-height: 1.5rem;
+    &.btn-md{
+        padding: .35rem 1.05rem;
+        font-size: 1.125rem;
+        line-height: 1.125rem;; 
+    }
 }
