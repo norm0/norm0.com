@@ -38,7 +38,8 @@ section {
 }
 
 #intro {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
   grid-template-rows: 1fr;
   grid-gap: 0 6rem;
   padding: 0% 4%;
@@ -62,7 +63,7 @@ section {
     font-size: 1.5rem;
     color: $black-34302E;
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     a {
       color: $black-34302E;
       border-bottom: 1px dotted $blue-0B5482;
@@ -72,8 +73,16 @@ section {
       }
     }
   }
-  img {
-    vertical-align: top;
+  .btn{
+    margin-bottom: 2rem;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      vertical-align: top;
+    }
   }
 }
 
@@ -84,6 +93,7 @@ section {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 2fr));
     grid-template-rows: 1fr;
     grid-gap: 1rem;
   }
@@ -98,7 +108,9 @@ section {
     grid-gap: 1rem;
     .card-body {
       padding: 5rem;
-    }
+      @media only screen and (max-width: 600px) {
+        padding: 2rem;
+    }}
     h3 {
       font-size: 2.25rem;
       font-weight: 700;
@@ -110,7 +122,7 @@ section {
     }
     img.work-thumbnail {
       border-top-left-radius: 0.625rem;
-      border-bottom-right-radius: 0.625rem;
+      
       margin-top: 4rem;
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.32);
     }
@@ -142,7 +154,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 132px;
+    height: 8.25rem;
     &--hp {
       background-color: #0096d6;
     }
@@ -165,12 +177,14 @@ section {
   .block-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
   }
   .block ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    margin-bottom: 1rem;
   }
 }
 

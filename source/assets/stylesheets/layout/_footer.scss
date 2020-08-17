@@ -6,11 +6,12 @@ footer {
   color: $white-FFFFFF;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: 1fr;
   align-items: top;
   min-height: 10vh;
   grid-gap: 1rem;
-  padding: 1% 4%;
+  padding: 4%;
   .connections{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,6 +19,7 @@ footer {
     align-items: top;
     ul{
       list-style: none;
+      padding-left: 0;
     }
   }
 }

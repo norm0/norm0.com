@@ -1,6 +1,11 @@
 //------------------------------------
 // # Default-Theme
 //------------------------------------
+
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     color: $red-FF2A00;
     &:hover {
