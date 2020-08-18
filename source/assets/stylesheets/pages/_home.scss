@@ -81,7 +81,10 @@ section {
     align-items: center;
     justify-content: center;
     img {
+      width: 100%;
+      height: 100%;
       vertical-align: top;
+      object-fit: cover;
     }
   }
 }
@@ -124,7 +127,7 @@ section {
       border-top-left-radius: 0.625rem;
       
       margin-top: 4rem;
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.32);
+      box-shadow: -8px -5px 32px 0 rgba(0, 0, 0, 0.32);
     }
     &--tree {
       background-color: #f5a623;
