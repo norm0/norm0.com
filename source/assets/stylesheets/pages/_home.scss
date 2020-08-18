@@ -73,7 +73,7 @@ section {
       }
     }
   }
-  .btn{
+  .btn {
     margin-bottom: 2rem;
   }
   .hero {
@@ -107,13 +107,15 @@ section {
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-template-rows: 1fr;
     grid-gap: 1rem;
     .card-body {
       padding: 5rem;
       @media only screen and (max-width: 600px) {
         padding: 2rem;
-    }}
+      }
+    }
     h3 {
       font-size: 2.25rem;
       font-weight: 700;
@@ -123,10 +125,17 @@ section {
     p {
       color: $black-34302E;
     }
+    .card-image {
+      display: grid;
+      justify-items: end;
+    }
     img.work-thumbnail {
       border-top-left-radius: 0.625rem;
-      
+      max-width: 90%;
+      height: auto;
+      object-fit: cover;
       margin-top: 4rem;
+      @media only screen and (max-width: 600px) {margin-top: 1rem;margin-left: 1rem;}
       box-shadow: -8px -5px 32px 0 rgba(0, 0, 0, 0.32);
     }
     &--tree {
