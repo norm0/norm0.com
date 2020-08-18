@@ -1,3 +1,5 @@
 // This is where it all goes :)
 
-import 'bootstrap';
+// import 'jquery'
+// import 'popper.js'
+// import 'bootstrap'

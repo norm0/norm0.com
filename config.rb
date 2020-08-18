@@ -2,8 +2,6 @@
 # Page options, layouts, aliases and proxies
 ###
 
-activate :inline_svg
-
 # Per-page layout changes:
 #
 # With no layout
@@ -26,6 +24,7 @@ page '/*.txt', layout: false
 # Environment List
 ###
 
+activate :inline_svg
 # Server Environment
 configure :server do
 
@@ -57,6 +56,8 @@ configure :development do
 
   config[:js_dir] = 'assets/javascripts'
   config[:css_dir] = 'assets/stylesheets'
+  config[:images_dir] = 'assets/images'
+  
 end
 
 # Build Environment
