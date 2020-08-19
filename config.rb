@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+activate :inline_svg
+
 # Per-page layout changes:
 #
 # With no layout
@@ -24,7 +26,6 @@ page '/*.txt', layout: false
 # Environment List
 ###
 
-activate :inline_svg
 # Server Environment
 configure :server do
 
