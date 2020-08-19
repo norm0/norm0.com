@@ -1,6 +1,6 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "norm0",
+  "name": "Norm Orstad",
   "icons": [
     {
       "src": "icon.png",
@@ -9,6 +9,6 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#fbc547",
-  "theme_color": "#fbc547"  
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"  
 }
