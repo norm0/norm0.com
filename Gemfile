@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 # Core
 gem 'middleman'
-gem 'middleman-autoprefixer'
 gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy'
 gem 'middleman-dotenv'
 gem 'middleman-favicon-maker'
