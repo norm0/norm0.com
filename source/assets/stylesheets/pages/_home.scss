@@ -1,0 +1,218 @@
+//------------------------------------
+// # Home-Page
+//------------------------------------
+
+section {
+  display: grid;
+
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 4%;
+  h2 {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $red-FF2A00;
+    text-align: left;
+    line-height: 2.25rem;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $black-34302E;
+    text-align: left;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: $black-34302E;
+    text-align: left;
+    line-height: 1.75rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+#intro {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-gap: 0 6rem;
+  padding: 0% 4%;
+  min-height: auto;
+  h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $black-34302E;
+    text-align: left;
+    line-height: 3rem;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 3.875rem;
+    color: $black-1F1E1E;
+    text-align: left;
+    line-height: 4.5rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $black-34302E;
+    text-align: left;
+    margin-bottom: 2rem;
+    a {
+      color: $black-34302E;
+      border-bottom: 1px dotted $blue-0B5482;
+      &:hover {
+        color: $blue-0B5482;
+        text-decoration: none;
+      }
+    }
+  }
+  .btn {
+    margin-bottom: 2rem;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+      object-fit: cover;
+    }
+  }
+}
+
+// Work
+#work {
+  background-color: $tan-F3E9DB;
+  min-height: auto;
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 2fr));
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .card-work {
+    background-color: $white-FFFFFF;
+    border-radius: 0.625rem;
+    border: none;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    .card-body {
+      padding: 5rem;
+      @media only screen and (max-width: 600px) {
+        padding: 2rem;
+      }
+    }
+    h3 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: $black-1F1E1E;
+      text-align: left;
+    }
+    p {
+      color: $black-34302E;
+    }
+    .card-image {
+      display: grid;
+      justify-items: end;
+    }
+    img.work-thumbnail {
+      border-top-left-radius: 0.625rem;
+      max-width: 90%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 4rem;
+      @media only screen and (max-width: 600px) {
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+      box-shadow: -8px -5px 32px 0 rgba(0, 0, 0, 0.32);
+    }
+    &--tree {
+      background-color: #f5a623;
+    }
+    &--keg {
+      background-color: $black-1F1E1E;
+      .card-body > h3,
+      p {
+        color: $white-FFFFFF;
+      }
+    }
+    &--catalogs {
+      background-color: $gray-FBFBFB;
+    }
+  }
+}
+
+// Clients
+#clients {
+  background-color: $tan-F3E9DB;
+  min-height: 20vh;
+  .card-clients {
+    background-color: $white-FFFFFF;
+    border-radius: 0.75rem;
+    border-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.25rem;
+    &--hp {
+      background-color: #0096d6;
+    }
+    &--belkin {
+      background-color: #73d44a;
+    }
+    &--aha {
+      background-color: #d9332c;
+    }
+    &--dignity {
+      background-color: #f26724;
+    }
+  }
+}
+
+// Capabilities
+#capabilities {
+  min-height: 20vh;
+  align-items: top;
+  .block-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+  }
+  .block ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
+  }
+}
+
+// About
+#about {
+  display: block;
+  min-height: 10vh;
+  a {
+    color: $black-34302E;
+    border-bottom: 1px dotted $blue-0B5482;
+    &:hover {
+      color: $blue-0B5482;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # General config
 # http://localhost:4567/__middleman
 
+activate :inline_svg
+
 # Import custom libraries and helpers
 Dir['./*/*.rb'].each { |file| load file }
 include FaviconsHelper

@@ -12,6 +12,9 @@ gem 'middleman-minify-html'
 gem 'middleman-pry'
 gem 'middleman-robots'
 
+# SVGs
+gem 'middleman-inline_svg'
+
 # Development
 gem 'pry-byebug'
 gem 'rake'

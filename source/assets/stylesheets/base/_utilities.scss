@@ -1,0 +1,20 @@
+//------------------------------------
+// #Utilities
+//------------------------------------
+
+.btn.btn-primary {
+    background: $white-FAEFEF;
+    border-color: transparent;
+    border-radius: 1.375rem;
+    padding: .5rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:  $red-FF2A00;
+    text-align: center;
+    line-height: 1.5rem;
+    &.btn-md{
+        padding: .35rem 1.05rem;
+        font-size: 1.125rem;
+        line-height: 1.125rem;; 
+    }
+}

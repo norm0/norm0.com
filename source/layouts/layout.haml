@@ -1,0 +1,10 @@
+!!!
+%html{lang: "en"}
+  %head
+    = partial 'partials/head'
+  %body{class: "#{@page_classes}"}
+    = partial 'partials/nav'
+    %main= yield
+    = partial 'partials/footer'
+    = javascript_include_tag "bundle"
+
