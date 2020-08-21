@@ -44,9 +44,6 @@ set :favicons, [
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :autoprefixer do |config|
-  config.browsers = 'last 2 versions'
-end
 
 activate :external_pipeline,
          name: :webpack,
@@ -112,8 +109,8 @@ configure :build do
                     sitemap: File.join(@app.data.site.host, 'sitemap.xml')
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch        = 'gh-pages'
-  deploy.build_before  = true
-end
+# activate :deploy do |deploy|
+#   deploy.deploy_method = :git
+#   deploy.branch        = 'gh-pages'
+#   deploy.build_before  = true
+# end
