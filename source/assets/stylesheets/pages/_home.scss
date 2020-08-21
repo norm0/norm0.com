@@ -95,8 +95,10 @@ section {
   min-height: auto;
   .cards {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 2fr));
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 1140px) {
+      grid-template-columns: 1fr;
+    }
     grid-template-rows: 1fr;
     grid-gap: 1rem;
   }
@@ -112,7 +114,7 @@ section {
     grid-gap: 1rem;
     .card-body {
       padding: 5rem;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 992px) {
         padding: 2rem;
       }
     }
@@ -135,7 +137,7 @@ section {
       height: auto;
       object-fit: cover;
       margin-top: 4rem;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 992px) {
         margin-top: 1rem;
         margin-left: 1rem;
       }
