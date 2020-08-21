@@ -6,7 +6,11 @@
 *.log
 build
 dist
-node_modules
 
 # Local Netlify folder
 .netlify
+
+# Ignore Node Modules
+package-lock.json
+node_modules
+.tmp
