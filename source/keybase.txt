@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/norm0
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://norm0.com
+  * I am norm0 (https://keybase.io/norm0) on keybase.
+  * I have a public key ASDXNf1tK31KV9m29l_RgXn8eUsOengfVe5buWjvqYrScAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012014f347f43853ddaab84a6207d8e3ecf77688dfebbd46941ef4054d5cee2ead1e0a",
+      "host": "keybase.io",
+      "kid": "0120d735fd6d2b7d4a57d9b6f65fd18179fc794b0e7a781f55ee5bb968efa98ad2700a",
+      "uid": "cc5607a53abf04936da9a1d0c5a16019",
+      "username": "norm0"
+    },
+    "merkle_root": {
+      "ctime": 1613753621,
+      "hash": "9c2a1c9c05bd58841af414cff40eab916a267a4678ceaadd8bbdfd2a35ceb1a61642f2fbae2fac6baad680147d69d850682681147305c07d8416989e303427bf",
+      "hash_meta": "ae383441155c3d7feb8428063fdfe0277545f837ee49282f7477f4741b9ae07e",
+      "seqno": 19164287
+    },
+    "service": {
+      "entropy": "4bmoTIWk3IPfc+5xb6564qja",
+      "hostname": "norm0.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1613753681,
+  "expire_in": 504576000,
+  "prev": "4f042678e84c954a9aa99c8026992a4fb02488ffb7875b235aeae57931acdbd1",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1zX9bSt9SlfZtvZf0YF5/HlLDnp4H1XuW7lo76mK0nAKp3BheWxvYWTESpcCDsQgTwQmeOhMlUqaqZyAJpkqT7AkiP+3h1sjWurleTGs29HEIEZwj1cUwkd8vWlz8+jiE/g63nN6CaSM+M19YwCizT/yAgHCo3NpZ8RA5nmomFMpsKm0O/sOfm1/zPWXpGQzQUXP8Ro1Bi8Xs7N2eHNSH4+QXiSF2amkdzb2Afxh5pjvZXxQQTX3KnPnC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPnCo7muYm9eRBZXPXWxiCJKeOsqxr8TGWUTZY7KccvXo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/norm0
+
+==================================================================
