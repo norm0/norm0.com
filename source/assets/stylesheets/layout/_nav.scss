@@ -4,7 +4,9 @@
 
 nav {
 	background-color: $red-FF2A00;
-
+	body.projects & {
+		background-color: $black-34302E ;
+	}
 	.logo {
 		font-weight: 700;
 		font-size: 1rem;
