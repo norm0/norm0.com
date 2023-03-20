@@ -164,7 +164,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman
+  middleman (= 4.3.2)
   middleman-dotenv
   middleman-favicon-maker
   middleman-inline_svg
@@ -178,4 +178,4 @@ DEPENDENCIES
   rubocop
 
 BUNDLED WITH
-   2.1.4
+   2.3.8
