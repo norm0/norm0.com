@@ -44,7 +44,6 @@ set :favicons, [
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-
 activate :external_pipeline,
          name: :webpack,
          command: build? ? 'yarn run build' : 'yarn run start',
