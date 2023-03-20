@@ -28,7 +28,7 @@
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
   },
   "dependencies": {
-    "bootstrap": "4",
+    "bootstrap": "^4.6",
     "jquery": "^3.5.1",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1"
