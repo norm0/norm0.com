@@ -24,8 +24,8 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p --openssl-legacy-provider"
+    "start": "NODE_ENV=--openssl-legacy-provider npm-run-all development ./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
   },
   "dependencies": {
     "bootstrap": "4",
