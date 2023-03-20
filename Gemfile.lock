@@ -164,7 +164,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (= 4.3.2)
+  middleman (~> 4.2)
   middleman-dotenv
   middleman-favicon-maker
   middleman-inline_svg
