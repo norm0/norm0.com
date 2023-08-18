@@ -18,6 +18,19 @@
 %section#work
   %h2 Work
   .cards
+    .card.card-work.card-work--emory
+      .card-body
+        %h3 Emory University
+        %p Library catalog gets new user-friendly refresh using open source technology.
+        -# = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
+      .card-image= image_tag "screenshot-emory.png", class: "work-thumbnail", alt: "Emory screenshot"
+    
+    .card.card-work.card-work--tenejo
+      .card-body
+        %h3 Tenejo
+        %p No-code Special Collections for univeristy libraries.
+        -# = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
+      .card-image= image_tag "screenshot-tenjo.png", class: "work-thumbnail", alt: "Tenejo screenshot"
     .card.card-work.card-work--tree
       .card-body
         %h3 Tree Builder
@@ -42,6 +55,7 @@
         %p Mobile promotions and real-time reporting
         -# = link_to "View Project →", "#", class: "btn btn-primary btn-md" 
       .card-image= image_tag "screenshot-mixmobi.png", class: "work-thumbnail", alt: "MixMobi screenshot"
+
 
 %section#capabilities
   %h2 Capabilities
