@@ -147,14 +147,15 @@ section {
     &--tree {
       background-color: #f5a623;
     }
-    &--keg {
+    &--keg{
       background-color: $black-1F1E1E;
       .card-body > h3,
       p {
         color: $white-FFFFFF;
       }
     }
-    &--catalogs {
+    &--catalogs,
+    &--tenejo  {
       background-color: $gray-FBFBFB;
     }
   }
