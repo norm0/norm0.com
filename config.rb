@@ -51,6 +51,7 @@ activate :external_pipeline,
 
 activate :dotenv
 activate :meta_tags
+activate :directory_indexes
 
 # Layouts
 # https://middlemanapp.com/basics/layouts
