@@ -57,6 +57,7 @@ section {
     color: $black-1F1E1E;
     text-align: left;
     line-height: 4.5rem;
+    &.text-shadow{text-shadow: 2px 2px 0px #FFF, 6px 4px 0px rgba(0, 0, 0, 0.15);}
   }
   p {
     font-weight: 400;
@@ -67,6 +68,7 @@ section {
     a {
       color: $black-34302E;
       border-bottom: 1px dotted $blue-0B5482;
+      text-decoration: none;
       &:hover {
         color: $blue-0B5482;
         text-decoration: none;
@@ -147,6 +149,7 @@ section {
     &--tree {
       background-color: #f5a623;
     }
+    &--tenejo,
     &--keg{
       background-color: $black-1F1E1E;
       .card-body > h3,
@@ -154,8 +157,10 @@ section {
         color: $white-FFFFFF;
       }
     }
-    &--catalogs,
-    &--tenejo  {
+    &--tenejo{
+      background-color: #5E5E5E;
+    }
+    &--catalogs{
       background-color: $gray-FBFBFB;
     }
   }
