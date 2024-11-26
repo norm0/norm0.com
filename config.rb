@@ -102,7 +102,7 @@ configure :build do
   activate :gzip
   activate :minify_css
   activate :minify_html
-  activate :minify_javascript
+  # activate :minify_javascript
   activate :relative_assets
   activate :robots, rules: [{ user_agent: '*', allow: %w[/] }],
                     sitemap: File.join(@app.data.site.host, 'sitemap.xml')
