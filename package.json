@@ -6,9 +6,9 @@
   "author": "Gabriele Canepa <gabriele@canepa.io>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.21.0",
-    "babel-loader": "^8.2.5",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^8.4.1",
     "css-loader": "^6.7.3",
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
