@@ -2,10 +2,56 @@
 // # Single-Page
 //------------------------------------
 
-.project-intro h2 {
-  font-weight: 700;
-  font-size: 7.25rem;
-  color: $black-34302E;
+.project-intro {
+  font-weight: 400;
+  font-size: 2.7em;
   text-align: left;
+  .title{
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.365em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: $black-34302E;
+  }
+  .subtitle {
+    line-height: 1;
+    font-weight: 400;
+    color: #5F646C;
+    
+    font-size: 1.35em;
+    line-height: 0.9;
+    padding: 0.15em 0 0.35em;
+    display: block;
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  }
+}
+
+h2{
   line-height: 1;
+  font-weight: 400;
+  color: #5F646C;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.solutions{
+  h1,h2,h3{
+  font-weight: 400;
+}
+  h3{
+    // text-transform: uppercase;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    // letter-spacing: 3px;
+   
+   color:$black-1F1E1E;
+  }
+  p{
+    color: $black-34302E;
+  }
+  
+}
+.ampersand{
+  font-style: italic;
 }

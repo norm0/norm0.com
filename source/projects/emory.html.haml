@@ -1,21 +1,24 @@
-.container
-	.row
-		%h1 Emory University Library Catalog Redesign
-		%h2 Transforming Access & Usability Through Open-Source Innovation
+.container.project-intro
+	.row.mt-5
+		%h1.title Emory University Library Catalog Redesign
+		%h2.subtitle 
+			Transforming Access 
+			%span.ampersand & 
+			Usability Through Open-Source Innovation
 = image_tag "emory-homepage.png", class: "img-fluid"
-.container#capabilities
+.container
 	.row.my-5	
 		%p Emory University, a top-tier research institution, sought to replace its costly proprietary library catalog system with an open-source alternative that improved accessibility and streamlined access for students, faculty, and external researchers. The goal was to design an intuitive, user-friendly interface that integrated seamlessly with the university’s existing library systems while maintaining a high standard of usability and accessibility.
+		%p
+			As the
+			%strong Lead Product Designer,
+			I was responsible for ensuring a seamless 
+			%strong user experience (UX) 
+			and designing a UI that aligned with Emory University’s existing digital ecosystem.
+.container			
 	.row.my-5
 		.col
-			%h2 Responsibilities
-			%p
-				As the
-				%strong Lead Product Designer,
-				I was responsible for ensuring a seamless 
-				%strong user experience (UX) 
-				and designing a UI that aligned with Emory University’s existing digital ecosystem. My key contributions included:
-	
+			%h2 Scope
 			%ul.list-group.list-group-flush
 				%li.list-group-item 
 					%strong User Research & Workflow Design 
@@ -34,66 +37,91 @@
 					%strong Ensuring Accessibility & Usability 
 					– Implementing best practices in WCAG compliance to improve accessibility for all users.
 		.col
-			%h2 Tools & Technologies
+			%h2 
+				Tools 
+				%span.ampersand & 
+				Technologies
 			%ul.list-group.list-group-flush
 				%li.list-group-item 
 					%strong Figma 
 					– UI/UX design, wireframes, and prototyping
 				%li.list-group-item 
 					%strong 
-						Ruby on Rails & 
-						=link_to "Blacklight", "https://projectblacklight.org/" 
-					– Framework for library discovery and access development
+						Ruby on Rails  
+					– Framework for backend development
+				%li.list-group-item 
+					%strong 
+						Blacklight
+					– Open source library discovery and access front-end
 				%li.list-group-item 
 					%strong Miro Boards 
 					– Collaborative idea sharing and process mapping
 				%li.list-group-item 
 					%strong Zoom 
 					– Remote collaboration and stakeholder meetings
-	%h2 Challenges & Solutions
+.container.solutions
+	%h2 
+		Challenges 
+		%span.ampersand & 
+		Solutions
 	.row.row-cols-1.row-cols-lg-3.g-4.mb-5
-
+	
 		.col 
-			.card
+			.card.h-100
 				.card-body
-					%h3 Challenge: Transitioning from Proprietary to Open-Source
-					%p 
+					%h3 Transitioning from Proprietary to Open-Source
+					%p.card-text 
 						Switching from a closed, paid system to an open-source platform meant reconstructing essential features while ensuring all critical functionalities remained intact.
+					%hr
 					%p 
 						%strong Solution: 
 						We reverse-engineered the previous system, identifying key APIs, workflows, and UI elements before rebuilding them with open-source compatibility.
 		.col 
-			.card
+			.card.h-100
 				.card-body
-					%h3 Challenge: Managing Complex Stakeholder Input
+					%h3 Managing Complex Stakeholder Input
 					%p 
 						With over 
 						%strong 30 stakeholders 
 						from Emory University and an 8 person IT team, balancing multiple perspectives while maintaining a focused design vision was challenging.
+					%hr
 					%p	
 						%strong Solution: 
 						Conducted iterative design reviews and usability testing with direct stakeholder feedback loops to ensure alignment and avoid bottlenecks.
 		.col 
-			.card
+			.card.h-100
 				.card-body
-					%h3 Challenge: Branding & UI Consistency
+					%h3 Branding & UI Consistency
 					%p 
 						Emory’s internal teams needed a system they could maintain 
 						%strong without disrupting 
 						the university’s established digital identity.
+					%hr
 					%p 
 						%strong Solution: 
 						We updated the brand styling, ensuring the new UI fit seamlessly within Emory’s existing design system, allowing the IT team to make updates effortlessly.
-	%h2 Wireframes, userflows and user goals
-	.row.row-cols-1.row-cols-lg-3.g-4
-		= image_tag "407_1x_shots_so.png", class: "img-fluid", title: "user goals"				
-		= image_tag "812_1x_shots_so.png", class: "img-fluid"
-		
-		= image_tag "604_1x_shots_so.png", class: "img-fluid"
-		= image_tag "162_1x_shots_so.png", class: "img-fluid"
-		= image_tag "432_1x_shots_so.png", class: "img-fluid"
-		= image_tag "256_1x_shots_so.png", class: "img-fluid"
 
+
+.container.main
+	%h2 
+		Wireframes, Userflows
+		%span.ampersand &
+		User Goals
+	.row.row-cols-1.row-cols-lg-3.g-4.gallery
+		= link_to '/assets/images/407_1x_shots_so.png', 
+		target: "_blank", 
+		"data-pswp-width" => "1920", 
+		"data-pswp-height" => "1280", 
+		"data-caption" => "Hello, World" do
+			= image_tag "407_1x_shots_so.png", class: "img-fluid", alt: "user goals"
+				
+		= link_to image_tag("812_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/812_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
+		= link_to image_tag("604_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/604_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
+		= link_to image_tag("162_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/162_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
+		= link_to image_tag("432_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/432_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
+		= link_to image_tag("256_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/256_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank", "data-caption" => "Hello, World"	
+
+.container
 	.row.my-5
 		%h2 Final Outcome & Impact
 		%ull.list-group.list-group-flush
@@ -113,29 +141,19 @@
 				✅ Enhanced 
 				%strong accessibility & usability, 
 				aligning with modern UX standards.
-	.row.row-cols-1.row-cols-lg-2.g-4
-		= image_tag "20_1x_shots_so.png", class: "img-fluid"
-
-		= image_tag "401_1x_shots_so.png", class: "img-fluid"
-		= image_tag "797_1x_shots_so.png", class: "img-fluid"
-		= image_tag "776_1x_shots_so.png", class: "img-fluid"
-		= image_tag "466_1x_shots_so.png", class: "img-fluid"
+.container
+	%h2 Catalog Layouts
+	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery
+		= link_to image_tag("20_1x_shots_so.png", class: "img-fluid"), "/assets/images/20_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("401_1x_shots_so.png", class: "img-fluid"), "/assets/images/401_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("797_1x_shots_so.png", class: "img-fluid"), "/assets/images/797_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("776_1x_shots_so.png", class: "img-fluid"), "/assets/images/776_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("466_1x_shots_so.png", class: "img-fluid"), "/assets/images/466_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
 	%h2 Homepage Drafts
-	.row.row-cols-1.row-cols-lg-2.g-4
-		= image_tag "313_1x_shots_so.png", class: "img-fluid"
-		= image_tag "442_1x_shots_so.png", class: "img-fluid"
-
-		= image_tag "169_1x_shots_so.png", class: "img-fluid"			
-		= image_tag "275_1x_shots_so.png", class: "img-fluid"
-		= image_tag "752_1x_shots_so.png", class: "img-fluid"
-		= image_tag "785_1x_shots_so.png", class: "img-fluid"
-		
-	
-	.row.my-5
-		%p 
-			This project highlights 
-			%strong my ability
-			to lead large-scale UI/UX transformations while navigating stakeholder complexities, open-source transitions, and accessibility-driven design. The success of the Emory Library Catalog Redesign exemplifies how strategic design decisions can drive 
-			%strong cost savings, 
-			improved user experience, and long-term maintainability in enterprise-level applications.
-
+	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery
+		= link_to image_tag("313_1x_shots_so.png", class: "img-fluid"), "/assets/images/313_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("442_1x_shots_so.png", class: "img-fluid"), "/assets/images/442_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+		= link_to image_tag("169_1x_shots_so.png", class: "img-fluid"			), "/assets/images/169_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
+		= link_to image_tag("275_1x_shots_so.png", class: "img-fluid"), "/assets/images/275_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
+		= link_to image_tag("752_1x_shots_so.png", class: "img-fluid"), "/assets/images/752_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
+		= link_to image_tag("785_1x_shots_so.png", class: "img-fluid"), "/assets/images/785_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
