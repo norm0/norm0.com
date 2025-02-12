@@ -197,7 +197,7 @@ section {
 // Capabilities
 #capabilities {
   min-height: 20vh;
-  align-items: top;
+  align-items: start;
   .block-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -218,10 +218,11 @@ section {
   min-height: 10vh;
   a {
     color: $black-34302E;
-    border-bottom: 1px dotted $blue-0B5482;
+    
     &:hover {
       color: $blue-0B5482;
       text-decoration: none;
+      border-bottom: 1px dotted $blue-0B5482;
     }
   }
 }
