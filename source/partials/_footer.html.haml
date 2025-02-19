@@ -1,15 +1,16 @@
 %footer{role: "contentinfo", "aria-label" => "Site footer"}
   .copyright{"aria-label" => "Copyright information"}
-    © Copyright 2006-#{Date.today.year} Norman Orstad. 
+    © Copyright 2006-#{Date.today.year} Norm Orstad. 
     %br 
     %span All Rights Reserved.
   .connections{"aria-label" => "Site navigation and social links"}
-    %ul{"aria-label" => "Site sections"}
-      %li= link_to "work", "#work", "aria-label" => "Jump to work section"
-      %li= link_to "capabilities", "#capabilities", "aria-label" => "Jump to capabilities section"
-      %li= link_to "about", "#about", "aria-label" => "Jump to about section"
+    - if current_page.url == '/'
+      %ul{"aria-label" => "Site sections"}
+        %li= link_to "work", "#work", "aria-label" => "Jump to work section"
+        %li= link_to "capabilities", "#capabilities", "aria-label" => "Jump to capabilities section"
+        %li= link_to "about", "#about", "aria-label" => "Jump to about section"
     %ul{"aria-label" => "Social media links"}
       %li= link_to "dribbble", "//dribbble.com/norm0", target: "_blank", "aria-label" => "Visit Norm's Dribbble profile", rel: "noopener"
       %li= link_to "twitter", "//twitter.com/norm0", target: "_blank", "aria-label" => "Visit Norm's Twitter profile", rel: "noopener"
-      %li= link_to "linkedIn", "//linkedin.com/in/norm0/", target: "_blank", "aria-label" => "Visit Norman's LinkedIn profile", rel: "noopener"
-      %li= link_to "github", "//github.com/norm0", target: "_blank", "aria-label" => "Visit Norman's GitHub profile", rel: "noopener"
+      %li= link_to "linkedIn", "//linkedin.com/in/norm0/", target: "_blank", "aria-label" => "Visit Norm's LinkedIn profile", rel: "noopener"
+      %li= link_to "github", "//github.com/norm0", target: "_blank", "aria-label" => "Visit Norm's GitHub profile", rel: "noopener"
