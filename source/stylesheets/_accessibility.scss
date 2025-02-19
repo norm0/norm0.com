@@ -1,0 +1,42 @@
+// Skip link
+.skip-link {
+  position: absolute;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  z-index: 100;
+  text-decoration: none;
+  transform: translateY(-120%);
+  transition: transform 0.3s;
+  left: 50%;
+  transform-origin: 50% 0;
+  
+  &:focus {
+    transform: translateY(0);
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+// Focus styles
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+// Hide elements visually but keep them accessible to screen readers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+} 
