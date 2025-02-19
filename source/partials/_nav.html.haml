@@ -1,7 +1,9 @@
-%nav
+%nav{role: "navigation", "aria-label" => "Main navigation"}
 	.main-nav
 		.logo= link_to "norm0", "/"
 		%ul
+			%li
+				= link_to "Home", "/", "aria-current" => (current_page.path == "index.html" ? "page" : nil)
 			%li= link_to "work", "/#work"
 			%li= link_to "capabilities", "/#capabilities"
 			%li= link_to "about", "/#about"

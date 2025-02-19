@@ -1,10 +1,19 @@
 !!!
-%html{lang: "en"}
+%html{lang: "en", dir: "ltr"}
   %head
     = partial 'partials/head'
   %body{class: page_classes}
-    = partial 'partials/nav'
-    %main= yield
-    = partial 'partials/footer'
+    / Skip to main content link
+    %a.skip-link{href: "#main-content", tabindex: "0"}
+      Skip to main content
+    
+    %header{role: "banner"}
+      = partial 'partials/nav'
+    
+    %main#main-content{role: "main", tabindex: "-1"}
+      = yield
+    
+    %footer{role: "contentinfo"}
+      = partial 'partials/footer'
     = javascript_include_tag "bundle"
 

@@ -1,20 +1,21 @@
-.project-intro
-	.mt-5
-		%h1.title Emory University Library Catalog Redesign
-		%h2.subtitle 
-			Transforming Access 
-			%span.ampersand & 
-			Usability Through Open-Source Innovation
-= image_tag "emory-homepage.png", class: "img-fluid"
+%article{role: "main", "aria-label" => "Emory University Library Catalog Project"}
+	.project-intro
+		.mt-5
+			%h1.title{id: "page-title"} Emory University Library Catalog Redesign
+			%h2.subtitle{"aria-labelledby" => "page-title"} 
+				Transforming Access 
+				%span.ampersand{"aria-hidden" => "true"} & 
+				Usability Through Open-Source Innovation
+= image_tag "emory-homepage.png", class: "img-fluid", alt: "Homepage design of Emory University's Library Catalog"
 .container
 	.row.my-5	
-		%p Emory University, a top-tier research institution, sought to replace its costly proprietary library catalog system with an open-source alternative that improved accessibility and streamlined access for students, faculty, and external researchers. The goal was to design an intuitive, user-friendly interface that integrated seamlessly with the university’s existing library systems while maintaining a high standard of usability and accessibility.
+		%p Emory University, a top-tier research institution, sought to replace its costly proprietary library catalog system with an open-source alternative that improved accessibility and streamlined access for students, faculty, and external researchers. The goal was to design an intuitive, user-friendly interface that integrated seamlessly with the university's existing library systems while maintaining a high standard of usability and accessibility.
 		%p
 			As the
 			%strong Lead Product Designer,
 			I was responsible for ensuring a seamless 
 			%strong user experience (UX) 
-			and designing a UI that aligned with Emory University’s existing digital ecosystem.
+			and designing a UI that aligned with Emory University's existing digital ecosystem.
 .container			
 	.row.row-cols-1.row-cols-lg-2.my-5
 		.col
@@ -25,13 +26,13 @@
 					– Mapping out student and faculty workflows to identify pain points in the existing system.
 				%li.list-group-item 
 					%strong UI/UX Design 
-					– Crafting wireframes, mockups, and interactive prototypes to align with Emory’s digital branding.
+					– Crafting wireframes, mockups, and interactive prototypes to align with Emory's digital branding.
 				%li.list-group-item 
 					%strong Collaboration & Testing 
 					– Working closely with both the 
 					%strong Data Curation Experts 
 					development team and 
-					%strong Emory’s IT Library Department 
+					%strong Emory's IT Library Department 
 					to integrate feedback and refine the system.
 				%li.list-group-item
 					%strong Ensuring Accessibility & Usability 
@@ -93,67 +94,210 @@
 				.card-body
 					%h3 Branding & UI Consistency
 					%p 
-						Emory’s internal teams needed a system they could maintain 
+						Emory's internal teams needed a system they could maintain 
 						%strong without disrupting 
-						the university’s established digital identity.
+						the university's established digital identity.
 					%hr
 					%p 
 						%strong Solution: 
-						We updated the brand styling, ensuring the new UI fit seamlessly within Emory’s existing design system, allowing the IT team to make updates effortlessly.
+						We updated the brand styling, ensuring the new UI fit seamlessly within Emory's existing design system, allowing the IT team to make updates effortlessly.
 
 
 .container.main
-	%h2 
+	%h2#wireframes-section 
 		Wireframes, Userflows
-		%span.ampersand &
+		%span.ampersand{"aria-hidden" => "true"} &
 		User Goals
-	.row.row-cols-1.row-cols-lg-3.g-4.gallery
+	.row.row-cols-1.row-cols-lg-3.g-4.gallery{"aria-labelledby" => "wireframes-section", role: "region"}
 		= link_to '/assets/images/407_1x_shots_so.png', 
-		target: "_blank", 
-		"data-pswp-width" => "1920", 
-		"data-pswp-height" => "1280", 
-		"data-caption" => "Hello, World" do
-			= image_tag "407_1x_shots_so.png", class: "img-fluid", alt: "user goals"
-				
-		= link_to image_tag("812_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/812_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
-		= link_to image_tag("604_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/604_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
-		= link_to image_tag("162_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/162_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
-		= link_to image_tag("432_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/432_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1080", target: "_blank", "data-caption" => "Hello, World"	
-		= link_to image_tag("256_1x_shots_so.png", class: "img-fluid", alt: ""), "/assets/images/256_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank", "data-caption" => "Hello, World"	
+			target: "_blank", 
+			"data-pswp-width" => "1920", 
+			"data-pswp-height" => "1280", 
+			"aria-label" => "Open full size wireframe showing user workflow diagram",
+			role: "button" do
+			= image_tag "407_1x_shots_so.png", 
+				class: "img-fluid", 
+				alt: "User workflow diagram showing library catalog search process"
+		
+		= link_to '/assets/images/812_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size wireframe of search results interface",
+			role: "button" do
+			= image_tag "812_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Wireframe showing search results layout with filtering options"
+
+		= link_to '/assets/images/604_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size wireframe of search results interface",
+			role: "button" do
+			= image_tag "604_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Wireframe showing search results layout with filtering options"
+
+		= link_to '/assets/images/162_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size wireframe of search results interface",
+			role: "button" do
+			= image_tag "162_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Wireframe showing search results layout with filtering options"
+
+		= link_to '/assets/images/432_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size wireframe of search results interface",
+			role: "button" do
+			= image_tag "432_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Wireframe showing search results layout with filtering options"
+
+		= link_to '/assets/images/256_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size wireframe of search results interface",
+			role: "button" do
+			= image_tag "256_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Wireframe showing search results layout with filtering options"
 
 .container
 	.row.my-5
-		%h2 Final Outcome & Impact
-		%ull.list-group.list-group-flush
-			%li.list-group-item 
-				✅ Successfully transitioned from a 
+		%h2#outcomes Final Outcome & Impact
+		%ul.list-group.list-group-flush{"aria-labelledby" => "outcomes"}
+			%li.list-group-item{"role" => "listitem"} 
+				✅
+				%span.sr-only Success:
+				Successfully transitioned from a 
 				%strong proprietary system 
 				to an open-source solution.
-			%li.list-group-item 
-				✅ Delivered a 
+			%li.list-group-item{"role" => "listitem"} 
+				✅
+				%span.sr-only Success:
+				Delivered a 
 				%strong fully functional catalog system 
 				within 9 months.
-			%li.list-group-item 
-				✅ Ensured 
+			%li.list-group-item{"role" => "listitem"} 
+				✅
+				%span.sr-only Success:
+				Ensured 
 				%strong seamless UI updates
-				for Emory’s IT and Library teams.
-			%li.list-group-item 
-				✅ Enhanced 
+				for Emory's IT and Library teams.
+			%li.list-group-item{"role" => "listitem"} 
+				✅
+				%span.sr-only Success:
+				Enhanced 
 				%strong accessibility & usability, 
 				aligning with modern UX standards.
 .container
-	%h2 Catalog Layouts
-	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery
-		= link_to image_tag("20_1x_shots_so.png", class: "img-fluid"), "/assets/images/20_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("401_1x_shots_so.png", class: "img-fluid"), "/assets/images/401_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("797_1x_shots_so.png", class: "img-fluid"), "/assets/images/797_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("776_1x_shots_so.png", class: "img-fluid"), "/assets/images/776_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("466_1x_shots_so.png", class: "img-fluid"), "/assets/images/466_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-	%h2 Homepage Drafts
-	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery
-		= link_to image_tag("313_1x_shots_so.png", class: "img-fluid"), "/assets/images/313_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("442_1x_shots_so.png", class: "img-fluid"), "/assets/images/442_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
-		= link_to image_tag("169_1x_shots_so.png", class: "img-fluid"			), "/assets/images/169_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
-		= link_to image_tag("275_1x_shots_so.png", class: "img-fluid"), "/assets/images/275_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
-		= link_to image_tag("752_1x_shots_so.png", class: "img-fluid"), "/assets/images/752_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1440", target: "_blank"
-		= link_to image_tag("785_1x_shots_so.png", class: "img-fluid"), "/assets/images/785_1x_shots_so.png","data-pswp-width" => "1920", "data-pswp-height" => "1280", target: "_blank"
+	%h2#catalog-layouts Catalog Layouts
+	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery{"aria-labelledby" => "catalog-layouts", role: "region"}
+		= link_to '/assets/images/20_1x_shots_so.png', 
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size catalog layout design",
+			role: "button" do
+			= image_tag "20_1x_shots_so.png", 
+				class: "img-fluid", 
+				alt: "Final catalog design showing search interface with faceted navigation"
+		= link_to '/assets/images/401_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size catalog layout design",
+			role: "button" do
+			= image_tag "401_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Final catalog design showing search interface with faceted navigation"
+		= link_to '/assets/images/797_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size catalog layout design",
+			role: "button" do
+			= image_tag "797_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Final catalog design showing search interface with faceted navigation"
+		= link_to '/assets/images/776_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size catalog layout design",
+			role: "button" do
+			= image_tag "776_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Final catalog design showing search interface with faceted navigation"
+		= link_to '/assets/images/466_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size catalog layout design",
+			role: "button" do
+			= image_tag "466_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Final catalog design showing search interface with faceted navigation"
+	%h2#homepage-drafts Homepage Drafts
+	.row.row-cols-1.row-cols-lg-2.g-4.mb-5.gallery{"aria-labelledby" => "homepage-drafts", role: "region"}
+		= link_to '/assets/images/313_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size homepage draft version 1",
+			role: "button" do
+			= image_tag "313_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"
+		= link_to '/assets/images/442_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size homepage draft version 2",
+			role: "button" do
+			= image_tag "442_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"
+		= link_to '/assets/images/169_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1440",
+			"aria-label" => "Open full size homepage draft version 3",
+			role: "button" do
+			= image_tag "169_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"
+		= link_to '/assets/images/275_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1440",
+			"aria-label" => "Open full size homepage draft version 4",
+			role: "button" do
+			= image_tag "275_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"
+		= link_to '/assets/images/752_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1440",
+			"aria-label" => "Open full size homepage draft version 5",
+			role: "button" do
+			= image_tag "752_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"
+		= link_to '/assets/images/785_1x_shots_so.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1280",
+			"aria-label" => "Open full size homepage draft version 6",
+			role: "button" do
+			= image_tag "785_1x_shots_so.png",
+				class: "img-fluid",
+				alt: "Initial homepage draft featuring centered search bar and category navigation"

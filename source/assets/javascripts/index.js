@@ -19,3 +19,19 @@ const lightbox = new PhotoSwipeLightbox({
 
 // Start the lightbox
 lightbox.init();
+
+// Handle keyboard navigation
+document.addEventListener('keydown', function(e) {
+	if (e.key === 'Escape') {
+		// Close modals, dropdowns, etc.
+	}
+});
+
+// Manage focus for modals
+function openModal(modalId) {
+	const modal = document.getElementById(modalId);
+	const focusableElements = modal.querySelectorAll(
+		'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+	);
+	// ... focus management code
+}
