@@ -15,6 +15,17 @@ set :fonts_dir,  'assets/fonts'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
+# Performance optimizations
+set :haml, format: :html5
+set :sass, style: :compressed
+set :file_watcher_ignore, [
+  %r{^\.git/},
+  %r{^\.bundle/},
+  %r{^\.sass-cache/},
+  %r{^build/},
+  %r{^node_modules/}
+]
+
 # Set favicons
 set :favicons, [
   {
@@ -97,15 +108,27 @@ configure :build do
   ignore   File.join(config[:js_dir], '*') # handled by webpack
   set      :asset_host, @app.data.site.host
   set      :relative_links, true
-  activate :asset_hash
+
+  # Optimize assets
+  activate :asset_hash, ignore: [%r{^images/}, %r{^fonts/}, /\.svg$/]
   activate :favicon_maker, icons: generate_favicons_hash
   activate :gzip
   activate :minify_css
-  activate :minify_html
+  activate :minify_html, remove_comments: true
   # activate :minify_javascript
   activate :relative_assets
-  activate :robots, rules: [{ user_agent: '*', allow: %w[/] }],
-                    sitemap: File.join(@app.data.site.host, 'sitemap.xml')
+
+  # Ignore unnecessary files during build
+  ignore 'assets/stylesheets/components/.gitkeep'
+  ignore 'assets/stylesheets/vendor/.gitkeep'
+  ignore 'assets/fonts/.keep'
+  ignore '*.DS_Store'
+  ignore '*.map'
+
+  # Keep robots configuration
+  activate :robots,
+           rules: [{ user_agent: '*', allow: %w[/] }],
+           sitemap: File.join(@app.data.site.host, 'sitemap.xml')
 end
 
 # activate :deploy do |deploy|

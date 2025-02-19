@@ -25,5 +25,10 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
+  },
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  optimization: {
+    minimize: process.env.NODE_ENV === 'production',
+    moduleIds: 'deterministic'
   }
 };
