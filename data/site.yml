@@ -1,17 +1,26 @@
 name:         "norm0.com"
-description:  "Product designer that speaks digital"
+description:  "Personal website and portfolio of Norm Orstad, showcasing professional work and projects"
 host:         "https://bitbucket.org/norm0/norm0.com"
 keywords:     "product designer, ux designer, ui designer, startup designer"
 thumbnail:    "banner.jpg"
 favicon:      "_favicon.svg"
-base_color:   "#FBC547"
+base_color:   "#fafafa"
 repository:   "https://bitbucket.org/norm0/norm0.com"
 license:      "https://bitbucket.org/norm0/norm0.com/license"
+
+# Meta tags configuration
+meta_tags:
+  viewport:   "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+  charset:    "utf-8"
+  language:   "en"
+  telephone:  "no"
+
 geocoding:
   place:      "Robbinsdale, US"
   latitude:   "38.7437396"
   longitude:  "9.2302437"
   region:     "PT-17"
+
 author:
   name:       "Norm Orstad"
   email:      "norm@orstad.com"
@@ -19,3 +28,6 @@ author:
   website:    "https://norm0.com"
   # Available social media tags: bitbucket dribbble facebook github gitlab instagram linkedin medium twitter
   github:     "norm0"
+  dribbble:   "norm0"
+  twitter:    "norm0"
+  linkedin:   "norm0"

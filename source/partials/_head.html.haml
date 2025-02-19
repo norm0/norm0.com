@@ -1,25 +1,20 @@
 %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
 %title norm0
+
 / Global site tag (gtag.js) - Google Analytics
-%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=G-47T8JG212T"}
+%script{async: true, src: "https://www.googletagmanager.com/gtag/js?id=G-47T8JG212T"}
 :javascript
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-47T8JG212T');
 
-%meta{charset: "utf-8"}/
-%meta{content: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0", name: "viewport"}/
-%meta{content: "telephone=no", name: "format-detection"}/
-%meta{content: "Norm Orstad", name: "author"}/
-%meta{content: "Personal website and portfolio of Norm Orstad, showcasing professional work and projects", name: "description"}/
-%meta{content: "en", "http-equiv" => "content-language"}/
-%link{href: "https://en.gravatar.com/userimage/348293/378f0d7edc2d6c44cdbce81ce9b6f22f.png", rel: "shortcut icon", alt: "Norman Orstad's avatar"}/
-
+/ Single source of truth for meta tags
 = auto_display_meta_tags
 = auto_display_favicon_tags if build?
 = stylesheet_link_tag "application"
 
 %link{href: "/humans.txt", rel: "author", type: "text/plain"}/
-%meta{content: "#fafafa", name: "theme-color"}/
+
+/ Font loading optimization
 %link{href: "//use.typekit.net/gzs8whn.css", rel: "stylesheet", rel: "preload", as: "style"}/

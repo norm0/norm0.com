@@ -57,9 +57,9 @@
 %section#capabilities{role: "region", "aria-labelledby" => "capabilities-heading"}
   %h2#capabilities-heading Capabilities
   .block-wrapper
-    .block{role: "list"}
+    .block
       %h3#design-heading Design
-      %ul{"aria-labelledby" => "design-heading"}
+      %ul.list-unstyled{"aria-labelledby" => "design-heading", role: "list"}
         %li{role: "listitem"} Product Design
         %li{role: "listitem"} UI/UX Design
         %li{role: "listitem"} Wireframing
@@ -68,9 +68,10 @@
         %li{role: "listitem"} Logos & Branding
         %li{role: "listitem"} Social Media, email, ads
         %li{role: "listitem"} Promotion & print
-    .block{role: "list"}
+
+    .block
       %h3#dev-heading Development
-      %ul{"aria-labelledby" => "dev-heading"}
+      %ul.list-unstyled{"aria-labelledby" => "dev-heading", role: "list"}
         %li{role: "listitem"} HTML/CSS
         %li{role: "listitem"} Ruby on Rails
         %li{role: "listitem"} Middleman
