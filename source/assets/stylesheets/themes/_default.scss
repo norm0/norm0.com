@@ -6,10 +6,53 @@ html{
     scroll-behavior: smooth;
 }
 
-a{
-    color: $red-FF2A00;
-    &:hover {
-        color: rgba($red-FF2A00, .7);
-        text-decoration: underline;
+// Base text and links
+body {
+  color: $text-dark;
+}
+
+a {
+  color: $link-color;
+  
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
+}
+
+// Navigation
+.nav-link {
+  color: $nav-link-color;
+  
+  &:hover,
+  &:focus {
+    color: $nav-link-hover-color;
+  }
+}
+
+// Buttons
+.btn-primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color;
+  border-color: $btn-primary-bg;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+  }
+}
+
+// Footer
+footer {
+  color: $text-dark;
+  
+  a {
+    color: $link-color;
+    
+    &:hover,
+    &:focus {
+      color: $link-hover;
     }
+  }
 }

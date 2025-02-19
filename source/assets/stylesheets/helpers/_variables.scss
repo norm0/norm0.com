@@ -12,3 +12,23 @@ $gray-FBFBFB: rgba(98%,98%,98%,1.00);
 $red-FF2A00: rgba(100%,17%,0%,1.00); 
 $red-D83018: rgba(85%,19%,9%,1.00); 
 $black-34302E: rgba(20%,19%,18%,1.00); 
+
+// Colors with improved contrast ratios
+$primary: #0056b3;          // Darker blue for better contrast (4.5:1)
+$primary-hover: #004494;    // Even darker for hover states
+$text-dark: #212529;        // Dark gray for main text (7:1)
+$text-light: #f8f9fa;       // Light gray for dark backgrounds
+$link-color: #0056b3;       // Accessible blue for links (4.5:1)
+$link-hover: #004494;       // Darker blue for link hovers
+
+// Override Bootstrap variables for accessibility
+$theme-colors: (
+  "primary": $primary,
+  "dark": $text-dark
+);
+
+// Component specific colors
+$nav-link-color: $text-dark;
+$nav-link-hover-color: $primary;
+$btn-primary-bg: $primary;
+$btn-primary-color: #ffffff;
