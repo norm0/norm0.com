@@ -5,3 +5,16 @@
 
 [build.environment]
   RUBY_VERSION = "2.6.2"
+  NETLIFY_USE_YARN = "true"
+
+[[plugins]]
+package = "@netlify/plugin-cachedir"
+
+[plugins.inputs]
+  # Cache these directories between builds
+  paths = [
+    "node_modules",
+    ".sass-cache",
+    ".bundle"
+  ]
+  
