@@ -31,7 +31,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.0",
-    "netlify": "^13.1.20",
+    "netlify": "^13.3.4",
     "photoswipe": "^5.4.4"
   }
 }
