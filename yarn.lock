@@ -991,10 +991,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@netlify/open-api@^2.36.0":
-  version "2.36.0"
-  resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.36.0.tgz#2c71780188e7dd6782583288077e603400f5acb1"
-  integrity sha512-cxdjUkHh0/SLvPusCFOmIoKpXdfvom+cpBT/bUrP2oxxH1htWgJ59GGuu/pJGEU+xhKpPotr+TSJl00u7ktIhg==
+"@netlify/open-api@^2.37.0":
+  version "2.37.0"
+  resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.37.0.tgz#fe2896f993d07e1a881a671b121d0f0dbae6a3c2"
+  integrity sha512-zXnRFkxgNsalSgU8/vwTWnav3R+8KG8SsqHxqaoJdjjJtnZR7wo3f+qqu4z+WtZ/4V7fly91HFUwZ6Uz2OdW7w==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -3102,12 +3102,12 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-netlify@^13.3.4:
-  version "13.3.4"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-13.3.4.tgz#267fe73ed34c68582db7bfa3446fdca2cb9020da"
-  integrity sha512-+Uh1YkU5EjbvqqmolVy/N8RlejDg2zvSqnpbpdaTAkgpIXgeIhCkUep0SAWa2UCEIf1Mlz1XHWRmQJaSgIZbGw==
+netlify@^13.3.5:
+  version "13.3.5"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-13.3.5.tgz#b3b44dfff378654eeb2968bc0f43c21e6a38abda"
+  integrity sha512-Nc3loyVASW59W+8fLDZT1lncpG7llffyZ2o0UQLx/Fr20i7P8oP+lE7+TEcFvXj9IUWU6LjB9P3BH+iFGyp+mg==
   dependencies:
-    "@netlify/open-api" "^2.36.0"
+    "@netlify/open-api" "^2.37.0"
     lodash-es "^4.17.21"
     micro-api-client "^3.3.0"
     node-fetch "^3.0.0"
