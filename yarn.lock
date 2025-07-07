@@ -1458,6 +1458,27 @@
     uuid "^11.1.0"
     write-file-atomic "^5.0.1"
 
+"@netlify/dev-utils@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@netlify/dev-utils/-/dev-utils-3.2.2.tgz#d82a687ee6be4add8dad5cff6f9d70f8d8e8196f"
+  integrity sha512-ECz/xEaqhAPUoFkeC2Ofpky1HBEKwPCsAL66iK/dLFHUFs39SC3y6Bn5QY76DzONmt+RjWmoYkSIEhJ1xAWHfA==
+  dependencies:
+    "@whatwg-node/server" "^0.10.0"
+    ansis "^4.1.0"
+    chokidar "^4.0.1"
+    decache "^4.6.2"
+    dot-prop "9.0.0"
+    env-paths "^3.0.0"
+    find-up "7.0.0"
+    image-size "^2.0.2"
+    js-image-generator "^1.0.4"
+    lodash.debounce "^4.0.8"
+    parse-gitignore "^2.0.0"
+    semver "^7.7.2"
+    tmp-promise "^3.0.3"
+    uuid "^11.1.0"
+    write-file-atomic "^5.0.1"
+
 "@netlify/edge-bundler@14.0.6", "@netlify/edge-bundler@^14.0.6":
   version "14.0.6"
   resolved "https://registry.yarnpkg.com/@netlify/edge-bundler/-/edge-bundler-14.0.6.tgz#99bd8808b70197572e71a2eab73566f74c62d6ab"
@@ -1490,12 +1511,12 @@
   resolved "https://registry.yarnpkg.com/@netlify/edge-functions-bootstrap/-/edge-functions-bootstrap-2.14.0.tgz#20b424c9dbf3a828dab5e9a475bf35f6904aa44e"
   integrity sha512-Fs1cQ+XKfKr2OxrAvmX+S46CJmrysxBdCUCTk/wwcCZikrDvsYUFG7FTquUl4JfAf9taYYyW/tPv35gKOKS8BQ==
 
-"@netlify/edge-functions@2.15.4":
-  version "2.15.4"
-  resolved "https://registry.yarnpkg.com/@netlify/edge-functions/-/edge-functions-2.15.4.tgz#8e48b5f820e923f8f30b949604e2b109d720e460"
-  integrity sha512-R84omAVAdm5NU1P8LaRXUU65NUPUzpOE5zdWmVzA6vwoSHweq0nVFfuXnQcVCHHgjizRhuKHi5mCxgwg0438ug==
+"@netlify/edge-functions@2.15.5":
+  version "2.15.5"
+  resolved "https://registry.yarnpkg.com/@netlify/edge-functions/-/edge-functions-2.15.5.tgz#0e50d1bd5c75bd9faade7a2bed685727657a6dc7"
+  integrity sha512-hm4NnhmDxwICuuaO2mw9HS1T3Pd2TEFU+xIItG09534vYddvCQ/6fAjT3LQQoyCWreEBUYvYn7Ml7kV4mMFb0w==
   dependencies:
-    "@netlify/dev-utils" "3.2.1"
+    "@netlify/dev-utils" "3.2.2"
     "@netlify/edge-bundler" "^14.0.6"
     "@netlify/edge-functions-bootstrap" "^2.14.0"
     "@netlify/runtime-utils" "2.1.0"
@@ -6896,10 +6917,10 @@ netlify-redirector@0.5.0:
   resolved "https://registry.yarnpkg.com/netlify-redirector/-/netlify-redirector-0.5.0.tgz#9611dd8497dab4e13d9f6a6f1595b9528b9e7abf"
   integrity sha512-4zdzIP+6muqPCuE8avnrgDJ6KW/2+UpHTRcTbMXCIRxiRmyrX+IZ4WSJGZdHPWF3WmQpXpy603XxecZ9iygN7w==
 
-netlify@^22.2.1:
-  version "22.2.1"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-22.2.1.tgz#a912e83a3a65aa1e3c5095e9965354a88cda372c"
-  integrity sha512-7AGb0K5dinHuFg0vlVXTaAr/DHhW6ZbaLVblJQ5Qm7Bs8xU0HVowcz1QN6uI7cMePULLwBOktx7s8ruce28RbA==
+netlify@^22.2.2:
+  version "22.2.2"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-22.2.2.tgz#a5386ddcc25ec8aba5d377c9e46e3089c944e731"
+  integrity sha512-l+X6HmpKbsw30Y/tCQ7K4umpMNguXNtWJWGeNXEp2A+Fr4qMSMEeKIqKjDaNSwZM5Y7zoyNSz7dYsP6HOT7msQ==
   dependencies:
     "@fastify/static" "7.0.4"
     "@netlify/api" "14.0.3"
@@ -6908,7 +6929,7 @@ netlify@^22.2.1:
     "@netlify/build-info" "10.0.7"
     "@netlify/config" "23.0.11"
     "@netlify/edge-bundler" "14.0.6"
-    "@netlify/edge-functions" "2.15.4"
+    "@netlify/edge-functions" "2.15.5"
     "@netlify/headers-parser" "9.0.1"
     "@netlify/local-functions-proxy" "2.0.3"
     "@netlify/redirect-parser" "15.0.2"
