@@ -21,4 +21,4 @@ gem 'rake'
 gem 'rubocop'
 
 # Security updates - using version compatible with Ruby 2.6.2
-gem 'nokogiri', '~> 1.13.10'  # Last version that supports Ruby 2.6.x
+gem 'nokogiri', '~> 1.18.9'   # Last version that supports Ruby 2.6.x
