@@ -1,24 +1,10 @@
 [build]
   command = "bundle exec middleman build --verbose"
-  publish = "build/"
+  publish = "build"
   timeout = "30m"
 
 [build.environment]
-  RUBY_VERSION = "2.6.2"
-  YARN_CACHE_FOLDER = ".yarn-cache"
-  NETLIFY_USE_YARN = "true"
-
-[build.processing]
-  skip_processing = false
-
-[build.processing.css]
-  bundle = true
-  minify = true
-
-[build.processing.js]
-  bundle = true
-  minify = true
-
-[build.processing.images]
-  compress = true
+  RUBY_VERSION = "3.2.4"
+  NODE_VERSION = "20.17.0"
+  BUNDLE_WITHOUT = "development test"
   
