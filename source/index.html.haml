@@ -84,16 +84,16 @@
   .row.row-cols-1.row-cols-sm-2.row-cols-md-4.g-4
     .col 
       .card.card-clients.card-clients--hp
-        = inline_svg "hp-logo-2012.svg", "aria-label" => "HP logo"
+        != inline_svg "hp-logo-2012.svg", "aria-label" => "HP logo"
     .col
       .card.card-clients.card-clients--belkin 
-        = inline_svg "belkin_logo.svg", "aria-label" => "Belkin logo"     
+        != inline_svg "belkin_logo.svg", "aria-label" => "Belkin logo"     
     .col 
       .card.card-clients.card-clients--aha 
-        = inline_svg "aha-logo-k.svg", "aria-label" => "AHA logo" 
+        != inline_svg "aha-logo-k.svg", "aria-label" => "AHA logo" 
     .col 
       .card.card-clients.card-clients--dignity 
-        = inline_svg "dignity-health-logo.svg", "aria-label" => "Dignity Health logo" 
+        != inline_svg "dignity-health-logo.svg", "aria-label" => "Dignity Health logo" 
 
 %section#about{role: "region", "aria-labelledby" => "about-heading"}
   %h2#about-heading About

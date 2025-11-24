@@ -1,5 +1,8 @@
 # General config
 # http://localhost:4567/__middleman
+require 'fileutils'
+ENV['TMPDIR'] ||= File.join(root, '.tmp')
+FileUtils.mkdir_p(ENV['TMPDIR'])
 
 activate :inline_svg
 
@@ -14,6 +17,7 @@ set :css_dir,    'assets/stylesheets'
 set :fonts_dir,  'assets/fonts'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
+set :tmp_dir,    File.join(root, '.tmp')
 
 # Performance optimizations
 set :haml, format: :html5
@@ -55,7 +59,7 @@ set :favicons, [
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :external_pipeline,
-         name: :webpack,
+         name: :vite,
          command: build? ? 'yarn run build' : 'yarn run start',
          source: 'dist',
          latency: 1
@@ -100,18 +104,16 @@ page '/*.txt',  layout: false
 
 configure :development do
   set      :debug_assets, true
-  activate :livereload
-  activate :pry
+activate :livereload, port: 35730
 end
 
 configure :build do
-  ignore   File.join(config[:js_dir], '*') # handled by webpack
+  ignore   File.join(config[:js_dir], '*') # handled by Vite pipeline
   set      :asset_host, @app.data.site.host
   set      :relative_links, true
 
   # Optimize assets
   activate :asset_hash, ignore: [%r{^images/}, %r{^fonts/}, /\.svg$/]
-  activate :favicon_maker, icons: generate_favicons_hash
   activate :gzip
   activate :minify_css
   activate :minify_html, remove_comments: true
@@ -125,10 +127,6 @@ configure :build do
   ignore '*.DS_Store'
   ignore '*.map'
 
-  # Keep robots configuration
-  activate :robots,
-           rules: [{ user_agent: '*', allow: %w[/] }],
-           sitemap: File.join(@app.data.site.host, 'sitemap.xml')
 end
 
 # activate :deploy do |deploy|

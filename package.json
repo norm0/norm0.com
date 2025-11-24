@@ -1,37 +1,19 @@
 {
   "name": "middleman-webpack",
   "version": "1.0.0-alpha",
-  "description": "🏗 Scalable ready-to-use Middleman 4 template",
-  "repository": "https://github.com/gabrielecanepa/middleman-webpack",
-  "author": "Gabriele Canepa <gabriele@canepa.io>",
+  "description": "Middleman + Vite pipeline (Bootstrap/PhotoSwipe)",
+  "author": "norm0",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.28.0",
-    "@babel/preset-env": "^7.28.0",
-    "babel-loader": "^10.0.0",
-    "css-loader": "^7.1.2",
-    "eslint": "^8.38.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "postcss-loader": "^8.1.1",
-    "sass": "^1.93.0",
-    "sass-loader": "^16.0.5",
-    "style-loader": "^4.0.0",
-    "stylelint": "^15.1.0",
-    "stylelint-config-recommended-scss": "^9.0.0",
-    "stylelint-scss": "5.3.2",
-    "webpack": "^5.100.2",
-    "webpack-cli": "^6.0.1"
+    "vite": "^5.4.10"
   },
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch --devtool eval-source-map --color",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail --mode production"
+    "start": "vite build --watch --outDir dist --emptyOutDir --mode development",
+    "build": "vite build --outDir dist --emptyOutDir"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.7",
-    "jquery": "^3.7.0",
-    "netlify": "^23.11.1",
     "photoswipe": "^5.4.4"
   }
 }

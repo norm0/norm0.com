@@ -1,5 +1,5 @@
 # norm0
-Simple Middleman 4 site with a Webpack pipeline (Yarn).
+Simple Middleman 4 site with a Vite pipeline (Yarn).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/948a5fc1-5e27-4807-bf3c-cd289ad3f581/deploy-status)](https://app.netlify.com/sites/sharp-feynman-e1511f/deploys)
 
@@ -22,7 +22,7 @@ yarn install
 ```bash
 bundle exec middleman server
 ```
-Middleman will start the dev server and run `yarn start` through the external pipeline for assets.
+Middleman will start the dev server and run `yarn start` (Vite build --watch) through the external pipeline for assets.
 
 ## Production build
 ```bash
