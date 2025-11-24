@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/gabrielecanepa/middleman-meta-tags
-  revision: 609b0594416a970e3ab5d31c4f5b6b7f2b14337b
+  revision: 098bb59d6119f3a4206ab600be1963346ce40331
   specs:
     middleman-meta-tags (0.4.0)
       middleman-core (>= 3.0.0)
