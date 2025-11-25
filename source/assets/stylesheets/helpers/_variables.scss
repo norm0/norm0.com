@@ -2,24 +2,24 @@
 // #Variables
 //------------------------------------
 
-$tan-F3E9DB: rgba(95%,91%,86%,1.00); 
-$gray-FAEFEF-70: rgba(98%,94%,94%,0.70); 
-$black-1F1E1E: rgba(12%,12%,12%,1.00);
-$blue-0B5482: rgba(11%,84%,130%,1.00); 
-$white-FAEFEF: rgba(98%,94%,94%,0.70); 
-$white-FFFFFF: rgba(100%,100%,100%,1.00); 
-$gray-FBFBFB: rgba(98%,98%,98%,1.00); 
-$red-FF2A00: rgba(100%,17%,0%,1.00); 
-$red-D83018: rgba(85%,19%,9%,1.00); 
-$black-34302E: rgba(20%,19%,18%,1.00); 
+$tan-F3E9DB: rgba(95%, 91%, 86%, 1);
+$gray-FAEFEF-70: rgba(98%, 94%, 94%, 0.7);
+$black-1F1E1E: rgba(12%, 12%, 12%, 1);
+$blue-0B5482: rgba(11%, 84%, 130%, 1);
+$white-FAEFEF: rgba(98%, 94%, 94%, 0.7);
+$white-FFFFFF: rgba(100%, 100%, 100%, 1);
+$gray-FBFBFB: rgba(98%, 98%, 98%, 1);
+$red-FF2A00: rgba(221, 78, 57, 1); //#dd4e39
+$red-D83018: rgba(85%, 19%, 9%, 1);
+$black-34302E: rgba(20%, 19%, 18%, 1);
 
 // Colors with improved contrast ratios
-$primary: #0056b3;          // Darker blue for better contrast (4.5:1)
-$primary-hover: #004494;    // Even darker for hover states
-$text-dark: #212529;        // Dark gray for main text (7:1)
-$text-light: #f8f9fa;       // Light gray for dark backgrounds
-$link-color: #0056b3;       // Accessible blue for links (4.5:1)
-$link-hover: #004494;       // Darker blue for link hovers
+$primary: #0056b3; // Darker blue for better contrast (4.5:1)
+$primary-hover: #004494; // Even darker for hover states
+$text-dark: #212529; // Dark gray for main text (7:1)
+$text-light: #f8f9fa; // Light gray for dark backgrounds
+$link-color: #0056b3; // Accessible blue for links (4.5:1)
+$link-hover: #004494; // Darker blue for link hovers
 
 // Override Bootstrap variables for accessibility
 $theme-colors: (
