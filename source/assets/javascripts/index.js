@@ -1,6 +1,7 @@
 import 'bootstrap';
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipe from 'photoswipe';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const galleryElements = document.querySelectorAll('.gallery');
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const lightbox = new PhotoSwipeLightbox({
 		gallery: '.gallery',
 		children: 'a',
-		pswpModule: () => import('photoswipe'),
+		pswpModule: PhotoSwipe,
 		showHideAnimationType: 'fade',
 		wheelToZoom: true,
 		loop: true,
