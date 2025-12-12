@@ -5,6 +5,7 @@
   "author": "norm0",
   "license": "MIT",
   "devDependencies": {
+    "netlify-cli": "^23.12.3",
     "vite": "^7.2.7"
   },
   "scripts": {
