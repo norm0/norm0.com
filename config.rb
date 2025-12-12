@@ -66,6 +66,11 @@ activate :external_pipeline,
 
 activate :dotenv
 activate :meta_tags
+
+# Ensure accessible viewport defaults (allows pinch-zoom and max-scale >= 5)
+set :meta_tags, (data.site.meta_tags || {}).merge(
+  viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0'
+)
 activate :directory_indexes
 
 # Layouts
