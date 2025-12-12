@@ -113,7 +113,14 @@ configure :build do
   set      :relative_links, true
 
   # Optimize assets
-  activate :asset_hash, ignore: [%r{^images/}, %r{^fonts/}, /\.svg$/]
+  # Skip Vite outputs (already hashed) so dynamic imports keep working
+  activate :asset_hash, ignore: [
+    %r{^images/},
+    %r{^fonts/},
+    /\.svg$/,
+    %r{^assets/},
+    %r{^bundle\.js$}
+  ]
   activate :gzip
   activate :minify_css
   activate :minify_html, remove_comments: true
