@@ -2,8 +2,8 @@
 // # Default-Theme
 //------------------------------------
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 // Base text and links
@@ -13,7 +13,7 @@ body {
 
 a {
   color: $link-color;
-  
+
   &:hover,
   &:focus {
     color: $link-hover;
@@ -23,7 +23,7 @@ a {
 // Navigation
 .nav-link {
   color: $nav-link-color;
-  
+
   &:hover,
   &:focus {
     color: $nav-link-hover-color;
@@ -45,11 +45,11 @@ a {
 
 // Footer
 footer {
-  color: $text-dark;
-  
+  // color: $text-dark;
+
   a {
     color: $link-color;
-    
+
     &:hover,
     &:focus {
       color: $link-hover;
