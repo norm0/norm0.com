@@ -9,8 +9,10 @@
   gtag('js', new Date());
   gtag('config', 'G-47T8JG212T');
 
-/ Single source of truth for meta tags
-= auto_display_meta_tags
+/ Single source of truth for meta tags; run the gem defaults, then override viewport and render.
+- auto_set_meta_tags
+- set_meta_tags(viewport: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0")
+= display_meta_tags
 = auto_display_favicon_tags if build?
 = stylesheet_link_tag "application"
 

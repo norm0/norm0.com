@@ -66,11 +66,6 @@ activate :external_pipeline,
 
 activate :dotenv
 activate :meta_tags
-
-# Ensure accessible viewport defaults (allows pinch-zoom and max-scale >= 5)
-set :meta_tags, (data.site.meta_tags || {}).merge(
-  viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0'
-)
 activate :directory_indexes
 
 # Layouts
@@ -109,7 +104,7 @@ page '/*.txt',  layout: false
 
 configure :development do
   set      :debug_assets, true
-activate :livereload, port: 35730
+  activate :livereload, port: 35_730
 end
 
 configure :build do
@@ -124,7 +119,7 @@ configure :build do
     %r{^fonts/},
     /\.svg$/,
     %r{^assets/},
-    %r{^bundle\.js$}
+    /^bundle\.js$/
   ]
   activate :gzip
   activate :minify_css
@@ -138,7 +133,6 @@ configure :build do
   ignore 'assets/fonts/.keep'
   ignore '*.DS_Store'
   ignore '*.map'
-
 end
 
 # activate :deploy do |deploy|
