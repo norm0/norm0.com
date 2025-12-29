@@ -18,4 +18,4 @@ gem 'rubocop', '~> 1.63'
 gem 'webrick'
 
 # Security updates - compatible with current Ruby
-gem 'nokogiri', '~> 1.16'
+gem 'nokogiri', '~> 1.19'
