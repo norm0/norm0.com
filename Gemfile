@@ -14,7 +14,7 @@ gem 'middleman-inline_svg'
 # Development
 gem 'pry', '~> 0.15.2'
 gem 'rake'
-gem 'rubocop', '~> 1.63'
+gem 'rubocop', '~> 1.84'
 gem 'webrick'
 
 # Security updates - compatible with current Ruby
