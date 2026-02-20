@@ -56,6 +56,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    io-console (0.8.2)
     json (2.18.0)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
@@ -113,10 +114,8 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
-    mini_portile2 (2.8.9)
     minitest (5.26.2)
-    nokogiri (1.19.0)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.19.1-x86_64-linux-gnu)
       racc (~> 1.4)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
@@ -128,7 +127,7 @@ GEM
       ast (~> 2.4.1)
       racc
     parslet (2.0.0)
-    prism (1.6.0)
+    prism (1.9.0)
     pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -184,7 +183,7 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   middleman (~> 4.6)
@@ -194,7 +193,7 @@ DEPENDENCIES
   middleman-meta-tags!
   middleman-minify-html
   nokogiri (~> 1.19)
-  pry (~> 0.15.2)
+  pry (~> 0.16.0)
   rake
   rubocop (~> 1.84)
   webrick
