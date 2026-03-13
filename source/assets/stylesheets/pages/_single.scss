@@ -5,11 +5,11 @@
 .project-intro {
   font-weight: 400;
   font-size: 2.7em;
-  display: grid  ;
+  display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.75rem;
   padding: 1% 4%;
-  .title{
+  .title {
     text-transform: uppercase;
     display: block;
     font-size: 0.365em;
@@ -21,43 +21,45 @@
   .subtitle {
     line-height: 1;
     font-weight: 400;
-    color: #5F646C;
-    
+    color: #5f646c;
+
     font-size: 1.35em;
     line-height: 0.9;
     padding: 0.15em 0 0.35em;
     display: block;
-    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   }
 }
 
-.projects{
-h2{
-  line-height: 1;
-  font-weight: 400;
-  color: #5F646C;
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-}
+.projects {
+  h2 {
+    line-height: 1;
+    font-weight: 400;
+    color: #5f646c;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: calc(1.25rem + 0.75vw);
+  }
 
-.solutions{
-  h1,h2,h3{
-  font-weight: 400;
-}
-  h3{
-    // text-transform: uppercase;
-    display: block;
-    font-size: 1.3em;
-    font-weight: 600;
-    // letter-spacing: 3px;
-   
-   color:$black-1F1E1E;
+  .solutions {
+    h1,
+    h2,
+    h3 {
+      font-weight: 400;
+    }
+    h3 {
+      // text-transform: uppercase;
+      display: block;
+      font-size: 1.3em;
+      font-weight: 600;
+      // letter-spacing: 3px;
+
+      color: $black-1F1E1E;
+    }
+    p {
+      color: $black-34302E;
+    }
   }
-  p{
-    color: $black-34302E;
+  .ampersand {
+    font-style: italic;
   }
-  
-}
-.ampersand{
-  font-style: italic;
-}
 }
