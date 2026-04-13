@@ -641,10 +641,10 @@
     "@netlify/otel" "^5.1.5"
     "@netlify/runtime-utils" "2.3.0"
 
-"@netlify/build-info@10.4.0":
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/@netlify/build-info/-/build-info-10.4.0.tgz#0a4260214d1c40d5cef180392775df2337ea1af8"
-  integrity sha512-PZ5PurdaZgZdmg969QBiPb56JKQu6EBu2d/2h5ppq7riYOCL2PfgoZQPqTu6g1JCF5my/SRY0+AJIX1YSEzqHg==
+"@netlify/build-info@10.5.0":
+  version "10.5.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build-info/-/build-info-10.5.0.tgz#aea43b21d3d45d5fe21062c469d4bf39c5294255"
+  integrity sha512-2h4aXB6tNiT7M3IbPW94Kbx7ujVaXoBnhoJ/S53FCbTg44F1Y4Wr0gnpkSlZCihePlwTaC5vlz1qKp4bw4sAqQ==
   dependencies:
     "@bugsnag/js" "^8.0.0"
     "@iarna/toml" "^2.2.5"
@@ -656,10 +656,10 @@
     yaml "^2.8.0"
     yargs "^17.6.0"
 
-"@netlify/build@35.11.2":
-  version "35.11.2"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-35.11.2.tgz#e39e9a91ab126c79b78e937f4f1eaa55392bb837"
-  integrity sha512-y+Dl2HqNs/5r3z8GBCGRDgjEVaKxJCSIjwQBG9QP/BMOIe18stjhDqECCtFvRvZDqVRF4YjgHZ8Q5VWQ5pFvfA==
+"@netlify/build@35.12.0":
+  version "35.12.0"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-35.12.0.tgz#8338c9826e5e10a7181daadc034282967d863952"
+  integrity sha512-3rOq5cbD+QSB9H5YUW5vMSeYRFG6fyHw3MUwrhpc5pHgprSvIU+ravMEdXvHZTHRyUfqvM4rVjyW11qef3Lwcw==
   dependencies:
     "@bugsnag/js" "^8.0.0"
     "@netlify/blobs" "^10.4.4"
@@ -681,6 +681,7 @@
     figures "^6.0.0"
     filter-obj "^6.0.0"
     hot-shots "11.4.0"
+    ignore "^7.0.0"
     indent-string "^5.0.0"
     is-plain-obj "^4.0.0"
     keep-func-props "^6.0.0"
@@ -3851,7 +3852,7 @@ ieee754@^1.1.13, ieee754@^1.2.1:
   resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-ignore@^7.0.3:
+ignore@^7.0.0, ignore@^7.0.3:
   version "7.0.5"
   resolved "https://registry.npmjs.org/ignore/-/ignore-7.0.5.tgz"
   integrity sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==
@@ -4791,17 +4792,17 @@ negotiator@^1.0.0:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
   integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
 
-netlify-cli@^24.10.0:
-  version "24.10.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-24.10.0.tgz#dcfb0224cc159e223a74ceb163c90465aad0069d"
-  integrity sha512-bW04BXG9P77NrSmdCa6TeundyLTG+vERfwqbWuRmslf6dM5rmPvWt9hoiueHjFAxroKmQEzYEAfjo3QDTy2R9w==
+netlify-cli@^24.11.1:
+  version "24.11.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-24.11.1.tgz#5e1c685bd6dafe19f0cd8ff15d876d5f1c29484a"
+  integrity sha512-UuoA10MAWP4hl/Y5vRWRmhZpcTUlUHq0wPaXGFsXMtfoLInq+blWoTWYSCV5CS4B66TlMGoKpJhskjyn/ujLhw==
   dependencies:
     "@fastify/static" "9.0.0"
     "@netlify/ai" "0.4.1"
     "@netlify/api" "14.0.18"
     "@netlify/blobs" "10.7.0"
-    "@netlify/build" "35.11.2"
-    "@netlify/build-info" "10.4.0"
+    "@netlify/build" "35.12.0"
+    "@netlify/build-info" "10.5.0"
     "@netlify/config" "24.4.4"
     "@netlify/dev" "4.16.4"
     "@netlify/dev-utils" "4.4.3"
