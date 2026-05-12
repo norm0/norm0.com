@@ -6,7 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "netlify-cli": "^25.6.1",
-    "vite": "^8.0.11"
+    "vite": "^8.0.12"
   },
   "scripts": {
     "start": "vite build --watch --outDir dist --emptyOutDir --mode development",
