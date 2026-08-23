@@ -5,8 +5,7 @@
 	"author": "norm0",
 	"license": "MIT",
 	"devDependencies": {
-		"vite": "^8.2.2",
-		"netlify-cli": "^27.1.2"
+		"vite": "^8.2.2"
 	},
 	"scripts": {
 		"start": "vite build --watch --outDir dist --emptyOutDir --mode development",
