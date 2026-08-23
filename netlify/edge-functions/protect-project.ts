@@ -1,8 +1,37 @@
 import type { Context } from "@netlify/edge-functions";
 
-const COOKIE_NAME = "augeo_session";
 const SESSION_LENGTH_SECONDS = 8 * 60 * 60;
 const encoder = new TextEncoder();
+
+type Project = {
+  cookieName: string;
+  cookiePath: string;
+  name: string;
+  passwordVariable: string;
+  sessionSecretVariable: string;
+};
+
+function projectFromPath(pathname: string): Project | undefined {
+  const parts = pathname.split("/").filter(Boolean);
+  if (parts.length !== 2 || parts[0] !== "projects") return undefined;
+
+  const slug = parts[1];
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return undefined;
+
+  const environmentPrefix = slug.replaceAll("-", "_").toUpperCase();
+  const name = slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  return {
+    cookieName: `${slug}_session`,
+    cookiePath: `/projects/${slug}`,
+    name,
+    passwordVariable: `${environmentPrefix}_PASSWORD`,
+    sessionSecretVariable: `${environmentPrefix}_SESSION_SECRET`,
+  };
+}
 
 function escapeHtml(value: string): string {
   return value
@@ -13,7 +42,8 @@ function escapeHtml(value: string): string {
     .replaceAll("'", "&#039;");
 }
 
-function loginPage(message = ""): Response {
+function loginPage(projectName: string, message = ""): Response {
+  const safeProjectName = escapeHtml(projectName);
   const feedback = message
     ? `<p class="feedback" role="alert">${escapeHtml(message)}</p>`
     : "";
@@ -70,7 +100,7 @@ function loginPage(message = ""): Response {
   <body>
     <main>
       <h1>Private project</h1>
-      <p>Enter the password to view Augeo.</p>
+      <p>Enter the password to view ${safeProjectName}.</p>
       ${feedback}
       <form method="post">
         <label for="password">Password</label>
@@ -136,8 +166,12 @@ function safeEqual(left: string, right: string): boolean {
   return difference === 0;
 }
 
-async function validSession(request: Request, secret: string): Promise<boolean> {
-  const cookie = getCookie(request, COOKIE_NAME);
+async function validSession(
+  request: Request,
+  cookieName: string,
+  secret: string,
+): Promise<boolean> {
+  const cookie = getCookie(request, cookieName);
   if (!cookie) return false;
 
   const [expiresAt, providedSignature] = cookie.split(".");
@@ -149,12 +183,24 @@ async function validSession(request: Request, secret: string): Promise<boolean> 
 }
 
 export default async (request: Request, context: Context) => {
-  const password = Netlify.env.get("AUGEO_PASSWORD");
-  const sessionSecret = Netlify.env.get("AUGEO_SESSION_SECRET");
   const requestUrl = new URL(request.url);
+  const project = projectFromPath(requestUrl.pathname);
+
+  if (!project) {
+    console.error(`Project protection is misconfigured for ${requestUrl.pathname}.`);
+    return new Response("Protected page is not configured.", {
+      status: 503,
+      headers: { "Cache-Control": "no-store" },
+    });
+  }
+
+  const password = Netlify.env.get(project.passwordVariable);
+  const sessionSecret = Netlify.env.get(project.sessionSecretVariable);
 
   if (!password || !sessionSecret) {
-    console.error("AUGEO_PASSWORD and AUGEO_SESSION_SECRET must be configured.");
+    console.error(
+      `${project.passwordVariable} and ${project.sessionSecretVariable} must be configured.`,
+    );
     return new Response("Protected page is not configured.", {
       status: 503,
       headers: { "Cache-Control": "no-store" },
@@ -167,12 +213,12 @@ export default async (request: Request, context: Context) => {
       headers: {
         Location: requestUrl.pathname,
         "Cache-Control": "no-store",
-        "Set-Cookie": `${COOKIE_NAME}=; Path=/projects/augeo; Max-Age=0; HttpOnly; Secure; SameSite=Lax`,
+        "Set-Cookie": `${project.cookieName}=; Path=${project.cookiePath}; Max-Age=0; HttpOnly; Secure; SameSite=Lax`,
       },
     });
   }
 
-  if (await validSession(request, sessionSecret)) {
+  if (await validSession(request, project.cookieName, sessionSecret)) {
     return context.next();
   }
 
@@ -194,12 +240,12 @@ export default async (request: Request, context: Context) => {
         headers: {
           Location: requestUrl.pathname + requestUrl.search,
           "Cache-Control": "no-store",
-          "Set-Cookie": `${COOKIE_NAME}=${expiresAt}.${signature}; Path=/projects/augeo; Max-Age=${SESSION_LENGTH_SECONDS}; HttpOnly; Secure; SameSite=Lax`,
+          "Set-Cookie": `${project.cookieName}=${expiresAt}.${signature}; Path=${project.cookiePath}; Max-Age=${SESSION_LENGTH_SECONDS}; HttpOnly; Secure; SameSite=Lax`,
         },
       });
     }
 
-    return loginPage("That password wasn’t recognized. Please try again.");
+    return loginPage(project.name, "That password wasn’t recognized. Please try again.");
   }
 
   if (request.method !== "GET" && request.method !== "HEAD") {
@@ -209,5 +255,5 @@ export default async (request: Request, context: Context) => {
     });
   }
 
-  return loginPage();
+  return loginPage(project.name);
 };

@@ -9,9 +9,9 @@
   BUNDLE_WITHOUT = "development test"
 
 [[edge_functions]]
-  function = "protect-augeo"
+  function = "protect-project"
   path = "/projects/augeo"
 
 [[edge_functions]]
-  function = "protect-augeo"
+  function = "protect-project"
   path = "/projects/augeo/"
