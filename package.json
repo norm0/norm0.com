@@ -1,20 +1,20 @@
 {
-  "name": "middleman-webpack",
-  "version": "1.0.0-alpha",
-  "description": "Middleman + Vite pipeline (Bootstrap/PhotoSwipe)",
-  "author": "norm0",
-  "license": "MIT",
-  "devDependencies": {
-    "vite": "^8.1.5"
-    "netlify-cli": "^26.2.0",
-  },
-  "scripts": {
-    "start": "vite build --watch --outDir dist --emptyOutDir --mode development",
-    "build": "vite build --outDir dist --emptyOutDir"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.7",
-    "photoswipe": "^5.4.4"
-  }
+	"name": "middleman-webpack",
+	"version": "1.0.0-alpha",
+	"description": "Middleman + Vite pipeline (Bootstrap/PhotoSwipe)",
+	"author": "norm0",
+	"license": "MIT",
+	"devDependencies": {
+		"vite": "^8.2.2",
+		"netlify-cli": "^27.1.2"
+	},
+	"scripts": {
+		"start": "vite build --watch --outDir dist --emptyOutDir --mode development",
+		"build": "vite build --outDir dist --emptyOutDir"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.8",
+		"bootstrap": "^5.3.8",
+		"photoswipe": "^5.4.4"
+	}
 }
