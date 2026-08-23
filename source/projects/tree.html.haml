@@ -1,0 +1,77 @@
+---
+title: Tree Builder
+---
+
+%article{role: "main", "aria-label" => "Tree Builder Project"}
+	.project-intro
+		.mt-5
+			%h1.title{id: "page-title"} Tree Builder
+			%h2.subtitle{"aria-labelledby" => "page-title"}
+				Making complex business workflows easier to understand, build, and manage
+= image_tag "webapp-treebuilder.png", class: "img-fluid", alt: "Screenshot of Tree Builder interface showing workflow diagram with nodes and connections"
+.container
+	.row.my-5
+		%p At Kinetic Data, I helped design Tree Builder, a visual tool for creating and managing enterprise workflows. These workflows combine approvals, routing rules, loops, tasks, status changes, and completion steps into a single process. Our challenge was to make that complexity approachable while preserving the control experienced users needed.
+.container
+	%h2 The challenge
+	%p As workflows grow, their logic becomes difficult to follow. Users need to quickly understand where a process begins, how decisions affect its path, what happens after an approval or rejection, and where each branch ends.
+
+	%h2 My role
+	%p I led the product and interaction design work, including workflow visualization, reusable interface patterns, and close collaboration with engineering.
+.container.solutions
+	%h2#design-approach Design approach
+	%p We used a node-and-connector model to make each workflow easier to scan. Visual markers distinguished node types, connector labels clarified decision points, and an integrated legend helped users learn the system. Search and zoom controls made larger workflows easier to navigate and inspect.
+
+	.row.row-cols-1.row-cols-lg-3.g-4.gallery.my-3{"aria-labelledby" => "design-approach", role: "region"}
+		= link_to '/assets/images/details-node-types.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size node types in new tab",
+			role: "button" do
+			= image_tag "details-node-types.png",
+				class: "img-fluid",
+				alt: "Screenshot of Tree Builder interface showing different node types"
+		= link_to '/assets/images/details-completion.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size completion in new tab",
+			role: "button" do
+			= image_tag "details-completion.png",
+				class: "img-fluid",
+				alt: "Screenshot of Tree Builder interface showing completion status"
+
+		= link_to '/assets/images/details-legend.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size legend in new tab",
+			role: "button" do
+			= image_tag "details-legend.png",
+				class: "img-fluid",
+				alt: "Screenshot of Tree Builder interface showing legend"
+		= link_to '/assets/images/details-lower-task-split.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size lower task split in new tab",
+			role: "button" do
+			= image_tag "details-lower-task-split.png",
+				class: "img-fluid",
+				alt: "Screenshot of Tree Builder interface showing lower task split"
+		= link_to '/assets/images/details-edit.png',
+			target: "_blank",
+			"data-pswp-width" => "1920",
+			"data-pswp-height" => "1080",
+			"aria-label" => "Open full size edit in new tab",
+			role: "button" do
+			= image_tag "details-edit.png",
+				class: "img-fluid",
+				alt: "Screenshot of Tree Builder interface showing edit controls"
+.container.main
+	%h2 Outcome
+	%p Tree Builder transformed abstract automation logic into a shared visual system that users could understand, discuss, and edit with greater confidence.
+.container.main
+	%h2 Skills demonstrated
+	%p Complex systems design, enterprise SaaS, information architecture, interaction design, workflow visualization, and reusable UI patterns.
