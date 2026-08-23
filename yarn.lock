@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@netlify/identity@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@netlify/identity/-/identity-2.0.0.tgz#43c1e616e21c3b589b11c409c49aa18704c1b952"
+  integrity sha512-AX2zdazgfa9M/L22kgC5TpuVgofz9ZkK0W7JRIqmW/In6LyW6HzLS2K9a3CPXlfcjWm1JqEdmXoXze3VIjes6Q==
+  dependencies:
+    gotrue-js "^1.0.1"
+
 "@oxc-project/types@=0.146.0":
   version "0.146.0"
   resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.146.0.tgz#d57a2591abbf1f6e50981b07ee24ab269530d87a"
@@ -111,6 +118,11 @@ fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
+gotrue-js@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gotrue-js/-/gotrue-js-1.0.1.tgz#e8b20acddc44fff3d571ef584cb95810c145532a"
+  integrity sha512-ZynwwM4bEo2y5yNWO3/Ynbx1AvQz9ONJSM9tB1jpooAvDPevGdvgeFP3NwM59FAlkd0szSkQRAhjINMkJSDfAQ==
 
 lightningcss-android-arm64@1.33.0:
   version "1.33.0"

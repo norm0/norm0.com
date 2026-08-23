@@ -7,4 +7,11 @@
   RUBY_VERSION = "3.2.4"
   NODE_VERSION = "20.19.0"
   BUNDLE_WITHOUT = "development test"
-  
+
+[[edge_functions]]
+  function = "protect-augeo"
+  path = "/projects/augeo"
+
+[[edge_functions]]
+  function = "protect-augeo"
+  path = "/projects/augeo/"

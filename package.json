@@ -12,6 +12,7 @@
 		"build": "vite build --outDir dist --emptyOutDir"
 	},
 	"dependencies": {
+		"@netlify/identity": "^2.0.0",
 		"@popperjs/core": "^2.11.8",
 		"bootstrap": "^5.3.8",
 		"photoswipe": "^5.4.4"
