@@ -12,7 +12,7 @@ gem 'middleman-minify-html'
 gem 'middleman-inline_svg'
 
 # Development
-gem 'pry', '~> 0.16.0'
+gem 'pry', '~> 0.16.1'
 gem 'rake'
 gem 'rubocop', '~> 1.91'
 gem 'webrick'
