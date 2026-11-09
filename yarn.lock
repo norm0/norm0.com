@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@netlify/identity@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@netlify/identity/-/identity-2.0.0.tgz#43c1e616e21c3b589b11c409c49aa18704c1b952"
-  integrity sha512-AX2zdazgfa9M/L22kgC5TpuVgofz9ZkK0W7JRIqmW/In6LyW6HzLS2K9a3CPXlfcjWm1JqEdmXoXze3VIjes6Q==
+"@netlify/identity@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@netlify/identity/-/identity-2.0.1.tgz#798a2d8e296165a4448b6a4bae298f4238d7684c"
+  integrity sha512-tKOJddHz1GHGbNsKSMaPjmtBiAJ76vU/CBmfZfiliO0SUtWbsJ7pdiXeki/73qyTR708r/NGsC0DnvUO1ebQtA==
   dependencies:
     gotrue-js "^1.0.1"
 
